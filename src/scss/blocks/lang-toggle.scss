@@ -1,0 +1,27 @@
+.lang-toggle {
+  display: flex;
+  font-family: $TTLakes;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+
+  &__item {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 2px;
+
+    &:focus {
+      color: $red;
+    }
+  }
+}
+
+input:checked + .lang-toggle__item,
+input:active + .lang-toggle__item {
+  color: $gray;
+}
+
+input:focus + .lang-toggle__item {
+  color: $red;
+}

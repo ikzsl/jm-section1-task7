@@ -1,17 +1,43 @@
-$bgColor: #24292e;
-$text: #fff;
+@import "fonts.scss";
+@import "vars.scss";
+@import "blocks/action-menu.scss";
+@import "blocks/main.scss";
+@import "blocks/nav-submenu.scss";
+@import "blocks/nav-menu.scss";
+@import "blocks/services.scss";
+@import "blocks/button.scss";
+@import "blocks/btn.scss";
+@import "blocks/navbar.scss";
+@import "blocks/lang-toggle.scss";
+@import "blocks/brands.scss";
+@import "blocks/unroll.scss";
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

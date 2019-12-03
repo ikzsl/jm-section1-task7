@@ -1,0 +1,33 @@
+.nav-submenu {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    font-family: $TTLakes;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+  }
+
+  &__item-link {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      transition: background-color 0.2s ease-out;
+    }
+
+    &--active,
+    &:active {
+      background-color: white;
+      border: 2px solid $cyan;
+    }
+  }
+}

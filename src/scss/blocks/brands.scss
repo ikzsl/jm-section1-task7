@@ -1,0 +1,141 @@
+.brands {
+
+  width: 320px;
+  background-color: #f8f8f8;
+  margin: 0 auto;
+
+  &__unroll {
+    align-self: strech;
+  }
+
+  &__headline {
+    font-family: $TTLakes;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $gray;
+    padding: 16px 10px 6px;
+    margin: 0;
+    margin-bottom: 24px;
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &--rolled > .brands__item:nth-child(n + 3) {
+      display: none;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    box-sizing: border-box;
+    height: 72px;
+    min-width: 300px;
+    border: 1px solid $silver;
+    border-radius: 6px;
+    background-color: #ffffff;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px $red;
+      transition: box-shadow 0.2s ease-in-out;
+      border: 1px solid #ffffff;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 38px;
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid $red;
+      border-bottom: 2px solid $red;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $red;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .brands {
+    width: $tablet-width;
+
+    &__headline {
+      padding: 16px 12px 16px;
+
+      margin-bottom: 24px;
+      background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    }
+
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-left: 12px;
+
+      &--rolled > .brands__item {
+        &:nth-child(n) {
+          display: block;
+        }
+
+        &:nth-child(n + 7) {
+          display: none;
+        }
+      }
+    }
+
+    &__link {
+      min-width: 224px;
+      margin-right: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .brands {
+    width: $desktop-width;
+
+    &__list {
+      padding-left: 16px;
+
+      &--rolled > .brands__item {
+        &:nth-child(n) {
+          display: block;
+        }
+
+        &:nth-child(n + 9) {
+          display: none;
+        }
+      }
+    }
+
+    &__link {
+      min-width: 240px;
+      margin-right: 32px;
+    }
+  }
+}
