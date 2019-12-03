@@ -1,13 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 4 Starter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="CPS - ремонт различных видов техники">
+  <title>CPS - ремонт техники</title>
 <link href="style.css" rel="stylesheet"></head>
+
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+  <section class="navbar">
+    <div class="navbar__header">
+
+      <button type="button" id="close-button" class="btn btn--close"></button>
+      <a class="navbar__logo"><img src="img/logo.png" alt="Логотип CPS"></a>
+      <a href="#" class="btn btn--search"></a>
+    </div>
+
+    <nav class="navbar__nav">
+      <ul class="navbar__nav-menu nav-menu">
+        <li class="nav-menu__item"><a class="nav-menu__item-link nav-menu__item-link--active">Ремонт техники</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Услуги и сервисы</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Корпоративным клиентам</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Продавцам техники</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Партнерам</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Производителям</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Наши сервисные центры</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <footer class="navbar__footer">
+
+      <div class="navbar__contact">
+        <ul class="navbar__contact-actions">
+          <li class="navbar__contact-action">
+            <a href="#" class="btn btn--call" aria-label="Позвонить"></a>
+          </li>
+          <li class="navbar__contact-action">
+            <a href="#" class="btn btn--chat" aria-label="Написать в чат"></a>
+          </li>
+          <li class="navbar__contact-action">
+            <a href="#" class="btn btn--profile" aria-label="Профиль"></a>
+          </li>
+        </ul>
+        <a href="mailto:mail@cps.com" class="navbar__contact-email">mail@cps.com</a>
+        <a href="tel:+7 800 890 8900" class="navbar__contact-tel">8 800 890 8900</a>
+      </div>
+      <ul class="navbar__lang-toggle lang-toggle">
+        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ru</a></li>
+        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">En</a></li>
+        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ch</a></li>
+      </ul>
+
+
+    </footer>
+  </section>
+
+  <section class="services">
+
+    <header class="services__header">
+      <h2 class="services__headline">Услуги и сервисы</h2>
+      <ul class="services__action-menu action-menu">
+        <li class="action-menu__item button">
+          <a class="button__link button--order" href="#" aria-label="Оставьте заявку на ремонт">
+            Оставить заявку
+          </a>
+        </li>
+        <li class="action-menu__item button">
+          <a class="button__link button--status" href="#" aria-label="Проверьте статус ремонта">
+            Статус ремонта
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="services__nav">
+      <ul class="services__nav-menu nav-submenu">
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link nav-submenu__item-link--active">Ремонтируемые
+            бренды</a>
+        </li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Ремонтируемые устройства</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Цены на услуги</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Адреса сервисных центров</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Специальные цены</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Отзывы</a></li>
+      </ul>
+    </nav>
+
+    <main class="services__main main">
+      <div class="main__desc">
+        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
+          нас вы
+          можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+        <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+          подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+          и, в свою очередь, советуют нас родным и близким.</p>
+        <button type="button" class="unroll">Читать далее</button>
+      </div>
+      <div class="main__image"></div>
+    </main>
+
+  </section>
+
+
+
+
+  <section class="brands">
+    <h2 class="brands__headline">Ремонт техники различных брендов</h2>
+
+    <ul class="brands__list brands__list--rolled">
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Lenovo.png" alt="Lenovo" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Samsung.png" alt="Samsung" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Apple.png" alt="Apple" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/ViewSonic.png" alt="ViewSonic" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Bosh.png" alt="Bosh" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/HP.png" alt="HP" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Acer.png" alt="Acer" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Sony.png" alt="Sony" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Samsung.png" alt="Samsung" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Apple.png" alt="Apple" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/ViewSonic.png" alt="ViewSonic" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Lenovo.png" alt="Lenovo" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Acer.png" alt="Acer" class="brands__logo"></a></li>
+    </ul>
+    <button type="button" class="brands___unroll unroll">Показать все</button>
+  </section>
+  <script src="js/main.js"></script>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
+
 </html>
