@@ -1,11 +1,13 @@
 .services {
-  display: none;
+  display: block;
   margin: 0 auto;
   max-width: 1120px;
   font-family: $TTLakes;
   background-color: $background;
   padding: 42px 33px;
   box-sizing: border-box;
+  border: 1px solid red;
+  
 
   &__header {
     display: flex;
@@ -16,7 +18,7 @@
   &__headline {
     margin: 0;
     font-family: $TTLakes;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     color: $black;
