@@ -773,25 +773,23 @@ input:focus + .lang-toggle__item {
       padding: 16px 12px 16px;
       background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%); }
     .brands__list {
+      justify-content: space-between;
       flex-direction: row;
-      flex-wrap: wrap;
-      padding-left: 12px; }
+      flex-wrap: wrap; }
       .brands__list--rolled {
         overflow: hidden; }
     .brands__link {
-      min-width: 224px;
-      margin-right: 24px; } }
+      min-width: 224px; } }
 
 @media (min-width: 1120px) {
   .brands {
     width: 1120px; }
     .brands__list {
-      padding-left: 16px; }
+      align-content: space-between; }
       .brands__list--rolled {
         overflow: hidden; }
     .brands__link {
-      min-width: 240px;
-      margin-right: 32px; } }
+      min-width: 240px; } }
 
 .unroll {
   display: inline-block;
@@ -845,8 +843,8 @@ input:focus + .lang-toggle__item {
   .button-arrow::before {
     content: "";
     position: absolute;
-    bottom: 45px;
-    right: 57px;
+    bottom: 32px;
+    right: 32px;
     width: 8px;
     height: 8px;
     border-right: 2px solid #ff3e79;
@@ -856,15 +854,32 @@ input:focus + .lang-toggle__item {
   .button-arrow::after {
     content: "";
     position: absolute;
-    bottom: 30px;
-    right: 40px;
+    bottom: 16px;
+    right: 16px;
     width: 40px;
     height: 40px;
     border: 2px solid #ff3e79;
     border-radius: 50%; }
 
 .repair-types {
+  display: flex;
+  flex-direction: column;
   border: 1px solid red; }
+  .repair-types__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .repair-types__link {
+    display: inline-block;
+    width: 240px;
+    height: 160px;
+    border: 1px solid #eaeaea;
+    margin-right: 16px;
+    border-radius: 6px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit; }
 
 .price-list {
   border: 1px solid blue; }
@@ -889,7 +904,8 @@ input[type="radio"].visually-hidden {
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "TTLakes", "Arial", sans-serif; }
 
 *,
 *::before,
