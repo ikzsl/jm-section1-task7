@@ -517,7 +517,8 @@ template {
   font-family: "TTLakes", "Arial", sans-serif;
   background-color: #f8f8f8;
   padding: 42px 33px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid red; }
   .services__header {
     display: flex;
     justify-content: space-between;
@@ -723,7 +724,8 @@ input:focus + .lang-toggle__item {
 .brands {
   width: 320px;
   background-color: #f8f8f8;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid green; }
   .brands__unroll {
     align-self: strech; }
   .brands__headline {
@@ -748,7 +750,6 @@ input:focus + .lang-toggle__item {
       height: 170px;
       overflow: hidden; }
   .brands__link {
-    position: relative;
     display: flex;
     justify-content: flex-start;
     padding-left: 15px;
@@ -764,25 +765,6 @@ input:focus + .lang-toggle__item {
       box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #ff3e79;
       transition: box-shadow 0.2s ease-in-out;
       border: 1px solid #ffffff; }
-    .brands__link::before {
-      content: "";
-      position: absolute;
-      top: 32px;
-      right: 38px;
-      width: 8px;
-      height: 8px;
-      border-right: 2px solid #ff3e79;
-      border-bottom: 2px solid #ff3e79;
-      transform: rotate(-45deg); }
-    .brands__link::after {
-      content: "";
-      position: absolute;
-      top: 16px;
-      right: 20px;
-      width: 40px;
-      height: 40px;
-      border: 2px solid #ff3e79;
-      border-radius: 50%; }
 
 @media (min-width: 768px) {
   .brands {
@@ -857,6 +839,38 @@ input:focus + .lang-toggle__item {
   .unroll--rolled::after {
     transform: rotate(-135deg);
     top: 12px; }
+
+.button-arrow {
+  position: relative; }
+  .button-arrow::before {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    right: 57px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #ff3e79;
+    border-bottom: 2px solid #ff3e79;
+    transform: rotate(-45deg);
+    z-index: 10; }
+  .button-arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff3e79;
+    border-radius: 50%; }
+
+.repair-types {
+  border: 1px solid red; }
+
+.price-list {
+  border: 1px solid blue; }
+
+.main-footer {
+  border: 1px solid red; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
