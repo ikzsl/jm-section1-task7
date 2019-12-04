@@ -357,12 +357,12 @@ template {
 @font-face {
   font-family: "TTLakes";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   src: url(./fonts/TTLakes-Medium.woff2) format("woff2"), url(./fonts/TTLakes-Medium.woff) format("woff"); }
 
 @font-face {
   font-family: "TTLakes";
-  font-weight: 800;
+  font-weight: 700;
   src: url(./fonts/TTLakes-Bold.woff2) format("woff2"), url(./fonts/TTLakes-Bold.woff) format("woff"); }
 
 .action-menu {
@@ -407,7 +407,7 @@ template {
     position: relative;
     text-decoration: none;
     font-family: "TTLakes", "Arial", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #1b1c21;
     font-size: 16px;
     line-height: 24px;
@@ -511,7 +511,7 @@ template {
       background-color: #41f6d7; }
 
 .services {
-  display: none;
+  display: block;
   margin: 0 auto;
   max-width: 1120px;
   font-family: "TTLakes", "Arial", sans-serif;
@@ -525,7 +525,7 @@ template {
   .services__headline {
     margin: 0;
     font-family: "TTLakes", "Arial", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     color: #1b1c21;
@@ -630,6 +630,7 @@ template {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
+  float: left;
   width: 320px;
   min-height: 100vh;
   background-color: #ffffff;
@@ -638,7 +639,7 @@ template {
   box-sizing: border-box;
   padding: 24px;
   font-family: "TTLakes", "Arial", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #1b1c21; }
@@ -686,7 +687,7 @@ template {
   .navbar__contact-tel {
     color: inherit;
     font-family: "TTLakes", "Arial", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     text-decoration: none; }
@@ -745,7 +746,7 @@ input:focus + .lang-toggle__item {
     padding: 0;
     margin: 0; }
     .brands__list--rolled > .brands__item:nth-child(n + 3) {
-      display: none; }
+      visibility: hidden; }
   .brands__link {
     position: relative;
     display: flex;
@@ -808,9 +809,9 @@ input:focus + .lang-toggle__item {
     .brands__list {
       padding-left: 16px; }
       .brands__list--rolled > .brands__item:nth-child(n) {
-        display: block; }
+        visibility: visible; }
       .brands__list--rolled > .brands__item:nth-child(n + 9) {
-        display: none; }
+        visibility: hidden; }
     .brands__link {
       min-width: 240px;
       margin-right: 32px; } }
