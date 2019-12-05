@@ -863,7 +863,92 @@ input:focus + .lang-toggle__item {
     color: inherit; }
 
 .price-list {
-  color: inherit; }
+  background-color: #f8f8f8; }
+  .price-list__table-header {
+    display: none; }
+  .price-list__table {
+    display: block; }
+    .price-list__table tbody {
+      display: flex;
+      width: 97vw;
+      overflow-x: scroll; }
+  .price-list__table-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    width: 260px;
+    height: 200px;
+    border-radius: 6px;
+    margin-right: 16px;
+    flex-shrink: 0; }
+  .price-list__order {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #ff3e79;
+    border-radius: 16px;
+    padding: 5px 40px 5px 10px; }
+    .price-list__order::before {
+      position: absolute;
+      content: "";
+      right: 16px;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #ffffff;
+      border-left: none;
+      border-bottom: none;
+      transform: rotate(45deg); }
+  .price-list__description {
+    max-width: 420px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1b1c21; }
+  .price-list__offer {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
+    text-decoration: none; }
+    .price-list__offer::after {
+      position: absolute; }
+
+@media (min-width: 768px) {
+  .price-list__order {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    display: inline-block; }
+  .price-list__table tbody {
+    flex-direction: column;
+    align-items: stretch;
+    width: auto; }
+  .price-list__table-header {
+    display: block; }
+  .price-list__table-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 64px;
+    margin-right: 0; }
+    .price-list__table-row th {
+      display: none; }
+    .price-list__table-row td:nth-child(2) {
+      width: 50%; }
+    .price-list__table-row td:nth-child(4) {
+      width: 15%; }
+    .price-list__table-row td:nth-child(6) {
+      width: 15%; } }
 
 .main-footer {
   border-top: 1px solid #d9fff5;
