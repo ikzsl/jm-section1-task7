@@ -16,6 +16,8 @@
 @import "blocks/repair-types.scss";
 @import "blocks/price-list.scss";
 @import "blocks/main-footer.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/main-wrapper.scss";
 
 
 .visually-hidden:not(:focus):not(:active),
@@ -38,7 +40,7 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
-html {
+body {
   box-sizing: border-box;
   font-family: $TTLakes;
 }

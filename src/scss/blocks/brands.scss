@@ -1,15 +1,9 @@
 .brands {
-  width: 320px;
   background-color: #f8f8f8;
-  margin: 0 auto;
   border: 1px solid green;
 
-  &__unroll {
-    align-self: strech;
-  }
 
   &__headline {
-    font-family: $TTLakes;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -59,11 +53,9 @@
 
 @media (min-width: $tablet-width) {
   .brands {
-    width: $tablet-width;
 
     &__headline {
       padding: 16px 12px 16px;
-
       background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
     }
 
@@ -71,7 +63,6 @@
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
-
 
       &--rolled {
         overflow: hidden;
@@ -86,7 +77,6 @@
 
 @media (min-width: $desktop-width) {
   .brands {
-    width: $desktop-width;
 
     &__list {
       align-content: space-between;

@@ -1,18 +1,13 @@
 .services {
   display: block;
-  margin: 0 auto;
-  max-width: 1120px;
   font-family: $TTLakes;
   background-color: $background;
-  padding: 42px 33px;
-  box-sizing: border-box;
   border: 1px solid red;
-  
+
 
   &__header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
   }
 
   &__headline {
@@ -22,7 +17,6 @@
     font-size: 28px;
     line-height: 40px;
     color: $black;
-    min-width: 300px;
   }
 
   &__nav-menu {
@@ -33,7 +27,6 @@
   &__action-menu {
     display: flex;
     justify-content: flex-end;
-    min-width: 100px;
   }
 
   &__action-item {

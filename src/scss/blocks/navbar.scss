@@ -1,12 +1,11 @@
 .navbar {
   display: none;
-  // display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
+  // position: absolute;
   float: left;
   width: 320px;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #ffffff;
   z-index: 10;
   box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2), -2px 0 4px rgba(69, 79, 126, 0.02);
@@ -103,5 +102,11 @@
 
   &__lang-toggle {
     padding: 40px 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navbar {
+    display: flex;
   }
 }
