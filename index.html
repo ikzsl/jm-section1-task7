@@ -9,200 +9,208 @@
 <link href="style.css" rel="stylesheet"></head>
 
 <body>
-  <header class="main-header">
-    <ul class="main-header__action-menu action-menu">
-      <li class="action-menu__item button">
-        <a class="button__link button--order" href="#" aria-label="Оставьте заявку на ремонт">
-          Оставить заявку
-        </a>
-      </li>
-      <li class="action-menu__item button">
-        <a class="button__link button--status" href="#" aria-label="Проверьте статус ремонта">
-          Статус ремонта
-        </a>
-      </li>
-    </ul>
-  </header>
-  <section class="navbar">
-    <div class="navbar__header">
+  <div class="wrapper">
+    <section class="navbar">
+      <div class="navbar__header">
 
-      <button type="button" id="close-button" class="btn btn--close"></button>
-      <a class="navbar__logo"><img src="img/logo.png" alt="Логотип CPS"></a>
-      <a href="#" class="btn btn--search"></a>
-    </div>
+        <button type="button" id="close-button" class="btn btn--close"></button>
+        <a class="navbar__logo"><img src="img/logo.png" alt="Логотип CPS"></a>
+        <a href="#" class="btn btn--search"></a>
+      </div>
 
-    <nav class="navbar__nav">
-      <ul class="navbar__nav-menu nav-menu">
-        <li class="nav-menu__item"><a class="nav-menu__item-link nav-menu__item-link--active">Ремонт техники</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Услуги и сервисы</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Корпоративным клиентам</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Продавцам техники</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Партнерам</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Производителям</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Наши сервисные центры</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <footer class="navbar__footer">
-
-      <div class="navbar__contact">
-        <ul class="navbar__contact-actions">
-          <li class="navbar__contact-action">
-            <a href="#" class="btn btn--call" aria-label="Позвонить"></a>
+      <nav class="navbar__nav">
+        <ul class="navbar__nav-menu nav-menu">
+          <li class="nav-menu__item"><a class="nav-menu__item-link nav-menu__item-link--active">Ремонт техники</a>
           </li>
-          <li class="navbar__contact-action">
-            <a href="#" class="btn btn--chat" aria-label="Написать в чат"></a>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Услуги и сервисы</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Корпоративным клиентам</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Продавцам техники</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Партнерам</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Производителям</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Наши сервисные центры</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <footer class="navbar__footer">
+
+        <div class="navbar__contact">
+          <ul class="navbar__contact-actions">
+            <li class="navbar__contact-action">
+              <a href="#" class="btn btn--call" aria-label="Позвонить"></a>
+            </li>
+            <li class="navbar__contact-action">
+              <a href="#" class="btn btn--chat" aria-label="Написать в чат"></a>
+            </li>
+            <li class="navbar__contact-action">
+              <a href="#" class="btn btn--profile" aria-label="Профиль"></a>
+            </li>
+          </ul>
+          <a href="mailto:mail@cps.com" class="navbar__contact-email">mail@cps.com</a>
+          <a href="tel:+7 800 890 8900" class="navbar__contact-tel">8 800 890 8900</a>
+        </div>
+        <ul class="navbar__lang-toggle lang-toggle">
+          <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ru</a></li>
+          <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">En</a></li>
+          <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ch</a></li>
+        </ul>
+
+
+      </footer>
+    </section>
+
+    <div class="main-wrapper">
+      <header class="main-header">
+        <ul class="main-header__action-menu action-menu">
+          <li class="action-menu__item button">
+            <a class="button__link button--order" href="#" aria-label="Оставьте заявку на ремонт">
+              Оставить заявку
+            </a>
           </li>
-          <li class="navbar__contact-action">
-            <a href="#" class="btn btn--profile" aria-label="Профиль"></a>
+          <li class="action-menu__item button">
+            <a class="button__link button--status" href="#" aria-label="Проверьте статус ремонта">
+              Статус ремонта
+            </a>
           </li>
         </ul>
-        <a href="mailto:mail@cps.com" class="navbar__contact-email">mail@cps.com</a>
-        <a href="tel:+7 800 890 8900" class="navbar__contact-tel">8 800 890 8900</a>
-      </div>
-      <ul class="navbar__lang-toggle lang-toggle">
-        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ru</a></li>
-        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">En</a></li>
-        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ch</a></li>
-      </ul>
+      </header>
 
 
-    </footer>
-  </section>
+      <section class="services">
 
-  <section class="services">
+        <header class="services__header">
+          <h1 class="services__headline">Услуги и сервисы</h1>
 
-    <header class="services__header">
-      <h1 class="services__headline">Услуги и сервисы</h1>
+        </header>
 
-    </header>
+        <nav class="services__nav">
+          <ul class="services__nav-menu nav-submenu">
+            <li class="nav-submenu__item"><a class="nav-submenu__item-link nav-submenu__item-link--active">Ремонтируемые
+                бренды</a>
+            </li>
+            <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Ремонтируемые устройства</a></li>
+            <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Цены на услуги</a></li>
+            <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Адреса сервисных центров</a></li>
+            <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Специальные цены</a></li>
+            <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Отзывы</a></li>
+          </ul>
+        </nav>
 
-    <nav class="services__nav">
-      <ul class="services__nav-menu nav-submenu">
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link nav-submenu__item-link--active">Ремонтируемые
-            бренды</a>
-        </li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Ремонтируемые устройства</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Цены на услуги</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Адреса сервисных центров</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Специальные цены</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Отзывы</a></li>
-      </ul>
-    </nav>
+        <main class="services__main main">
+          <div class="main__desc">
+            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
+              нас вы
+              можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+            <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+              подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+              рекомендациям
+              и, в свою очередь, советуют нас родным и близким.</p>
+            <button type="button" class="unroll">Читать далее</button>
+          </div>
+          <div class="main__image"></div>
+        </main>
 
-    <main class="services__main main">
-      <div class="main__desc">
-        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
-          нас вы
-          можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-        <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
-          подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-          и, в свою очередь, советуют нас родным и близким.</p>
-        <button type="button" class="unroll">Читать далее</button>
-      </div>
-      <div class="main__image"></div>
-    </main>
-
-  </section>
+      </section>
 
 
 
 
-  <section class="brands">
-    <h2 class="brands__headline">Ремонт техники различных брендов</h2>
+      <section class="brands">
+        <h2 class="brands__headline">Ремонт техники различных брендов</h2>
 
-    <ul class="brands__list brands__list--rolled">
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Lenovo.png" alt="Lenovo" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Samsung.png" alt="Samsung" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Apple.png" alt="Apple" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/ViewSonic.png" alt="ViewSonic" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Bosh.png" alt="Bosh" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/HP.png" alt="HP" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Acer.png" alt="Acer" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Sony.png" alt="Sony" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Samsung.png" alt="Samsung" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Apple.png" alt="Apple" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/ViewSonic.png" alt="ViewSonic" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Lenovo.png" alt="Lenovo" class="brands__logo"></a></li>
-      <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Acer.png" alt="Acer" class="brands__logo"></a></li>
-    </ul>
-    <button type="button" class="brands___unroll unroll">Показать все</button>
-  </section>
+        <ul class="brands__list brands__list--rolled">
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Lenovo.png" alt="Lenovo" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Samsung.png" alt="Samsung" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Apple.png" alt="Apple" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/ViewSonic.png" alt="ViewSonic" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Bosh.png" alt="Bosh" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/HP.png" alt="HP" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Acer.png" alt="Acer" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Sony.png" alt="Sony" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Samsung.png" alt="Samsung" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Apple.png" alt="Apple" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/ViewSonic.png" alt="ViewSonic" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Lenovo.png" alt="Lenovo" class="brands__logo"></a></li>
+          <li class="brands__item"><a href="#" class="brands__link button-arrow"><img src="img/Acer.png" alt="Acer" class="brands__logo"></a></li>
+        </ul>
+        <button type="button" class="brands___unroll unroll">Показать все</button>
+      </section>
 
-  <section class="repair-types">
-      <h2 class="repair-types__headline">Ремонт техники различных брендов</h2>
-    <ul class="repair-types__list">
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт планшетов</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ПК</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт мониторов</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт планшетов</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ПК</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт мониторов</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт планшетов</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ПК</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт мониторов</a></li>
-      <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
-    </ul>
-    <button type="button" class="repair-types___unroll unroll">Показать все</button>
-  </section>
+      <section class="repair-types">
+        <h2 class="repair-types__headline">Ремонт техники различных брендов</h2>
+        <ul class="repair-types__list">
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт планшетов</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ПК</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт мониторов</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт планшетов</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ПК</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт мониторов</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт планшетов</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ПК</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт мониторов</a></li>
+          <li class="repair-types__item"><a href="#" class="repair-types__link button-arrow">Ремонт ноутбуков</a></li>
+        </ul>
+        <button type="button" class="repair-types___unroll unroll">Показать все</button>
+      </section>
 
-  <section class="price-list">
-    <h2 class="price-list__headline section-headline">Цены на услуги</h2>
-    <table class="price-list__table">
-      <tr class="price-list__table-header">
-        <th>Ремонтные услуги</th>
-        <th>Цена</th>
-        <th>Срок</th>
-        
-      </tr>
-      <tr class="price-list__table-row">
-        <td>Диагностика</td>
-        <td>Бесплатно</td>
-        <td>30 мин</td>
-        <td><a href="#">Заказать</a></td>
-      </tr>
-      <tr class="price-list__table-row">
-        <td>Замена дисплея</td>
-        <td>1 000 ₽</td>
-        <td>30-120 мин</td>
-        <td><a href="#">Заказать</a></td>
-      </tr>
-      <tr class="price-list__table-row">
-        <td>Замена полифонического динамика</td>
-        <td>1 000 ₽</td>
-        <td>30-120 мин</td>
-        <td><a href="#">Заказать</a></td>
-      </tr>
-      <tr class="price-list__table-row">
-        <td>Тестирование с выдачей технического заключения</td>
-        <td>1 000 ₽</td>
-        <td>30-120 мин</td>
-        <td><a href="#">Заказать</a></td>
-      </tr>
-      <tr class="price-list__table-row">
-        <td>Замена программного обеспечения</td>
-        <td>1 000 ₽</td>
-        <td>30-120 мин</td>
-        <td><a href="#">Заказать</a></td>
-      </tr>
+      <section class="price-list">
+        <h2 class="price-list__headline section-headline">Цены на услуги</h2>
+        <table class="price-list__table">
+          <tr class="price-list__table-header">
+            <th>Ремонтные услуги</th>
+            <th>Цена</th>
+            <th>Срок</th>
+            
+          </tr>
+          <tr class="price-list__table-row">
+            <td>Диагностика</td>
+            <td>Бесплатно</td>
+            <td>30 мин</td>
+            <td><a href="#">Заказать</a></td>
+          </tr>
+          <tr class="price-list__table-row">
+            <td>Замена дисплея</td>
+            <td>1 000 ₽</td>
+            <td>30-120 мин</td>
+            <td><a href="#">Заказать</a></td>
+          </tr>
+          <tr class="price-list__table-row">
+            <td>Замена полифонического динамика</td>
+            <td>1 000 ₽</td>
+            <td>30-120 мин</td>
+            <td><a href="#">Заказать</a></td>
+          </tr>
+          <tr class="price-list__table-row">
+            <td>Тестирование с выдачей технического заключения</td>
+            <td>1 000 ₽</td>
+            <td>30-120 мин</td>
+            <td><a href="#">Заказать</a></td>
+          </tr>
+          <tr class="price-list__table-row">
+            <td>Замена программного обеспечения</td>
+            <td>1 000 ₽</td>
+            <td>30-120 мин</td>
+            <td><a href="#">Заказать</a></td>
+          </tr>
 
-    </table>
-    <p class="price-list__description">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для
-      получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-    <a href="#" class="price-list__offer">Получить коммерческое предложение</a>
-  </section>
+        </table>
+        <p class="price-list__description">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
+          Для
+          получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+        <a href="#" class="price-list__offer">Получить коммерческое предложение</a>
+      </section>
 
-  <footer class="main-footer">
-    <ul class="main-footer__items">
-      <li class="main-footer__item">© 2019 CPS<br>
-        Разработано командой <a href="https://apesong.ru/">Apesong </a></li>
-      <li class="main-footer__item">Политика конфиденциальности</li>
-      <li class="main-footer__item">Информация, размещенная на данной странице, не является публичной офертой</li>
-    </ul>
-  </footer>
+      <footer class="main-footer">
+        <ul class="main-footer__items">
+          <li class="main-footer__item">© 2019 CPS<br>Разработано командой <a href="https://apesong.ru/">Apesong </a></li>
+          <li class="main-footer__item"><a href="#"> Политика конфиденциальности</a></li>
+          <li class="main-footer__item">Информация, размещенная на данной странице, не является публичной офертой</li>
+        </ul>
+      </footer>
+    </div>
+  </div>
   <script src="js/main.js"></script>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 
