@@ -865,7 +865,7 @@ input:focus + .lang-toggle__item {
 
 .price-list {
   background-color: #f8f8f8; }
-  .price-list__table-header {
+  .price-list__header-row {
     display: none; }
   .price-list__table {
     display: block; }
@@ -946,8 +946,11 @@ input:focus + .lang-toggle__item {
     flex-direction: column;
     align-items: stretch;
     width: auto;
-    overflow-x: visible; }
+    overflow-x: visible;
+    border-radius: 16px; }
   .price-list__table-header {
+    display: block; }
+  .price-list__header-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -957,18 +960,18 @@ input:focus + .lang-toggle__item {
     margin-right: 0;
     padding: 16px;
     text-align: left; }
-    .price-list__table-header th {
+    .price-list__header-row td {
       font-weight: 500;
       font-size: 14px;
       line-height: 16px;
       color: #7e7e82; }
-      .price-list__table-header th:nth-child(1) {
+      .price-list__header-row td:nth-child(1) {
         width: 50%; }
-      .price-list__table-header th:nth-child(2) {
+      .price-list__header-row td:nth-child(2) {
         min-width: 80px; }
-      .price-list__table-header th:nth-child(3) {
+      .price-list__header-row td:nth-child(3) {
         width: 15%; }
-      .price-list__table-header th:nth-child(4) {
+      .price-list__header-row td:nth-child(4) {
         width: 120px; }
   .price-list__table-row {
     flex-direction: row;
@@ -977,7 +980,7 @@ input:focus + .lang-toggle__item {
     width: auto;
     height: 64px;
     margin-right: 0;
-    padding: 0;
+    padding: 16px;
     border-bottom: 1px solid #eaeaea;
     border-radius: 0; }
     .price-list__table-row:nth-last-of-type(1) {
