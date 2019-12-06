@@ -2,18 +2,6 @@
   background-color: #f8f8f8;
   border: 1px solid green;
 
-
-  &__headline {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: $gray;
-    padding: 16px 10px 6px;
-    margin: 0;
-    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
-  }
-
   &__list {
     box-sizing: border-box;
     display: flex;

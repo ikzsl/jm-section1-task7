@@ -9,7 +9,7 @@
   "devDependencies": {
     "@babel/core": "7.5.5",
     "@babel/preset-env": "7.5.5",
-    "autoprefixer": "9.6.1",
+    "autoprefixer": "^9.6.1",
     "babel-loader": "8.0.6",
     "copy-webpack-plugin": "5.0.4",
     "css-loader": "3.2.0",
@@ -43,6 +43,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "postcss-cli": "^6.1.3"
   }
 }

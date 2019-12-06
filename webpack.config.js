@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   // Входной файл
@@ -38,6 +39,19 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
+
+          {
+            loader: "postcss-loader",
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('autoprefixer')({
+                  'overrideBrowserslist': ['> 1%', 'last 2 versions']
+                }),
+              ]
+            }
+          },
+
           'sass-loader', // compiles Sass to CSS, using Node Sass by default
           "postcss-loader" // parse CSS and add vendor prefixes to CSS rules
         ],

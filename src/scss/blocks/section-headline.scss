@@ -6,6 +6,13 @@
   color: $gray;
   display: block;
   background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
-  padding: 16px 0;
+  padding: 16px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  
+  .section-headline {
+    padding-left: 24px;
+  }
 }

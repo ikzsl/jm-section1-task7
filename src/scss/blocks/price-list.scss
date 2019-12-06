@@ -1,19 +1,17 @@
 .price-list {
   background-color: $background;
 
-  &__table-header {
+  &__header-row{
     display: none;
-
   }
 
   &__table {
     display: block;
 
-
     & tbody {
       display: flex;
       width: 97vw;
-      overflow-x: scroll;
+      overflow: hidden;
     }
   }
 
@@ -111,23 +109,30 @@
         align-items: stretch;
         width: auto;
         overflow-x: visible;
+        border-radius: 16px;
+        // padding: 16px;
+        // margin-left: 16px;
       }
     }
 
     &__table-header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      width: auto;
-      height: 64px;
-      margin-right: 0;
-      padding: 16px;
-      text-align: left;
+      display: block;
+    }
+
+    &__header-row{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        height: 64px;
+        margin-right: 0;
+        padding: 16px;
+        text-align: left;
 
 
-      & th {
-
+      & td {
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
@@ -148,23 +153,22 @@
         &:nth-child(4) {
           width: 120px;
         }
-
-
       }
     }
 
     &__table-row {
+
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       width: auto;
       height: 64px;
       margin-right: 0;
-      padding: 0;
+
+      padding: 16px;
 
       border-bottom: 1px solid $silver;
-     border-radius: 0;
-
+      border-radius: 0;
 
       &:nth-last-of-type(1) {
         border: none;
@@ -175,7 +179,6 @@
       }
 
       & td {
-
         padding: 0;
 
         &:nth-child(2) {
@@ -193,8 +196,6 @@
         &:nth-child(8) {
           width: 120px;
         }
-
-
       }
     }
   }
