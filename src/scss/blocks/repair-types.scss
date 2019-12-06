@@ -1,16 +1,15 @@
 .repair-types {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   background-color: $background;
 
   &__list {
     display: flex;
     list-style: none;
-    padding: 0;
+    padding: 16px;
     margin: 0;
-    width: 96vw;
-    overflow: hidden;
+    width: 95vw;
+    overflow-x: scroll;
   }
 
   &__link {

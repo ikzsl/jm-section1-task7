@@ -1,7 +1,7 @@
 .price-list {
   background-color: $background;
 
-  &__header-row{
+  &__header-row {
     display: none;
   }
 
@@ -10,8 +10,9 @@
 
     & tbody {
       display: flex;
-      width: 97vw;
-      overflow: hidden;
+      padding: 16px 8px;
+      width: 95vw;
+      overflow-x: scroll;
     }
   }
 
@@ -81,6 +82,8 @@
 
   &__offer {
     position: relative;
+    display: block;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -88,8 +91,17 @@
     text-decoration: none;
     padding-left: 16px;
 
+
     &::after {
       position: absolute;
+      display: inline-block;
+      content: "";
+      bottom: 8px;
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid $red;
+      border-bottom: 2px solid $red;
+      transform: rotate(-45deg);
     }
   }
 }
@@ -119,18 +131,16 @@
       display: block;
     }
 
-    &__header-row{
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: auto;
-        height: 64px;
-        margin-right: 0;
-        padding: 16px;
-        text-align: left;
-
+    &__header-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: auto;
+      height: 64px;
+      margin-right: 0;
+      padding: 16px;
+      text-align: left;
 
       & td {
         font-weight: 500;
@@ -157,7 +167,6 @@
     }
 
     &__table-row {
-
       flex-direction: row;
       align-items: center;
       justify-content: space-between;

@@ -40,20 +40,21 @@ module.exports = {
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
 
-          {
-            loader: "postcss-loader",
-            options: {
-              ident: 'postcss',
-              plugins: [
-                require('autoprefixer')({
-                  'overrideBrowserslist': ['> 1%', 'last 2 versions']
-                }),
-              ]
-            }
-          },
+          // {
+          //   loader: "postcss-loader",
+          //   options: {
+          //     ident: 'postcss',
+          //     plugins: [
+          //       require('autoprefixer')({
+          //         'overrideBrowserslist': ['> 1%', 'last 2 versions']
+          //       }),
+          //     ]
+          //   }
+          // },
 
-          'sass-loader', // compiles Sass to CSS, using Node Sass by default
-          "postcss-loader" // parse CSS and add vendor prefixes to CSS rules
+
+          "postcss-loader", // parse CSS and add vendor prefixes to CSS rules
+          'sass-loader' // compiles Sass to CSS, using Node Sass by default
         ],
       },
 

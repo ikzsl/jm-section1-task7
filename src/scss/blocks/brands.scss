@@ -1,31 +1,27 @@
 .brands {
   background-color: #f8f8f8;
-  border: 1px solid green;
 
   &__list {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
     list-style: none;
-    padding: 5px;
+    padding: 16px;
     margin: 0;
-
-    &--rolled {
-      height: 170px;
-      overflow: hidden;
-    }
+    width: 95vw;
+    overflow-x: scroll;
   }
 
   &__link {
     display: flex;
     justify-content: flex-start;
-    padding-left: 15px;
-    margin-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 16px;
     align-items: center;
     box-sizing: border-box;
     height: 72px;
-    min-width: 300px;
+    width: 240px;
     border: 1px solid $silver;
     border-radius: 6px;
     background-color: #ffffff;
@@ -53,6 +49,7 @@
       flex-wrap: wrap;
 
       &--rolled {
+        height: 170px;
         overflow: hidden;
       }
     }

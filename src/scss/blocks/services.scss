@@ -2,26 +2,19 @@
   display: block;
   font-family: $TTLakes;
   background-color: $background;
-  border: 1px solid red;
+  padding: 0;
+  // border: 1px solid red;
 
+  &__nav-menu {
+    overflow: hidden;
+    width: 90vw;
+    padding-left: 16px;
+  }
 
   &__header {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__headline {
-    margin: 0;
-    font-family: $TTLakes;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 40px;
-    color: $black;
-  }
-
-  &__nav-menu {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 16px;
   }
 
   &__action-menu {

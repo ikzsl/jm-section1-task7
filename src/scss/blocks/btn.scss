@@ -6,6 +6,10 @@
   background: $red no-repeat 50% 50%;
   border: none;
 
+  &__lable {
+    visibility: hidden;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0 0 0 3px white, 0 0 0 5px $red;
@@ -15,6 +19,21 @@
 
   &:active {
     opacity: 0.8;
+  }
+
+  &--menu {
+    background-image: url("../img/icon-menu.svg");
+    background-size: 20px;
+  }
+
+  &--order {
+    background-image: url("../img/icon-order.svg");
+    background-size: 20px;
+  }
+
+  &--status {
+    background-image: url("../img/icon-status.svg");
+    background-size: 17px;
   }
 
   &--search {

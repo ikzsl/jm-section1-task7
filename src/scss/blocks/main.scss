@@ -1,12 +1,20 @@
 .main {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   background-color: $background;
   margin-bottom: 4px;
   position: relative;
 
   &__desc {
+padding: 16px;
+  }
+
+  &__desc-wrapper {
+
+    height: 90px;
+    overflow: hidden;
+    margin-bottom: 10px;
 
     & p {
       color: $black;
@@ -18,58 +26,12 @@
   }
 
   &__image {
-    background-image: url("../img/services-img.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     align-items: center;
     margin: 0;
+    width: 100vw;
 
   }
 
-  &__unroll {
-    margin-left: 30px;
-    position: relative;
-    text-decoration: none;
-    font-family: $TTLakes;
-    font-weight: 500;
-    color: $black;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-
-    &:hover,
-    &:focus {
-      color: $gray;
-      animation: color 0.1s ease-in;
-    }
-
-    &::before {
-      left: -20px;
-      top: 2px;
-      position: absolute;
-      content: "";
-      width: 6px;
-      height: 6px;
-      border: 2px solid $cyan;
-      border-left: none;
-      border-top: none;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      left: -20px;
-      top: 8px;
-      position: absolute;
-      content: "";
-      width: 6px;
-      height: 6px;
-      border: 2px solid $cyan;
-      border-left: none;
-      border-top: none;
-      transform: rotate(45deg);
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
