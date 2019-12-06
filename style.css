@@ -555,16 +555,16 @@ template {
   .btn:active {
     opacity: 0.8; }
   .btn--menu {
-    background-image: url("/img/icon-menu.svg");
+    background-image: url(./static/icon-menu.svg);
     background-size: 20px; }
   .btn--order {
-    background-image: url("/img/icon-order.svg");
+    background-image: url(./static/icon-order.svg);
     background-size: 20px; }
   .btn--status {
-    background-image: url("/img/icon-status.svg");
+    background-image: url(./static/icon-status.svg);
     background-size: 17px; }
   .btn--search {
-    background-image: url("/img/icon-search.svg");
+    background-image: url(./static/icon-search.svg);
     background-size: 20px; }
   .btn--close {
     position: relative;
@@ -586,13 +586,13 @@ template {
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg); }
   .btn--call {
-    background-image: url("/img/icon-call.svg");
+    background-image: url(./static/icon-call.svg);
     background-size: 20px; }
   .btn--chat {
-    background-image: url("/img/icon-chat.svg");
+    background-image: url(./static/icon-chat.svg);
     background-size: 20px; }
   .btn--profile {
-    background-image: url("/img/icon-profile.svg");
+    background-image: url(./static/icon-profile.svg);
     background-size: 20px; }
 
 .navbar {
