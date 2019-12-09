@@ -8,6 +8,7 @@
 
   &__desc {
     padding: 0 16px;
+    margin-bottom: 16px;
   }
 
   &__desc-wrapper {
@@ -37,9 +38,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 24px;
+    padding-bottom: 26px;
 
     &__desc {
-      padding: 0 24px;
+
       width: 50%;
     }
 
@@ -61,7 +64,6 @@
       border-radius: 6px;
       align-self: flex-end;
       width: auto;
-
     }
   }
 }

@@ -80,3 +80,23 @@
     background-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .btn {
+    position: relative;
+
+    &__lable {
+      vertical-align: middle;
+      height: 40px;
+      position: absolute;
+      left: -140px;
+      top: 7px;
+
+      visibility: visible;
+      display: inline-block;
+      color: $black;
+
+     
+    }
+  }
+}

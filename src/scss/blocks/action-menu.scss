@@ -38,3 +38,22 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .action-menu {
+    justify-content: flex-end;
+
+    flex-grow: 1;
+    visibility: visible;
+
+    &::before {
+      display: none;
+    }
+
+    &__item {
+      width: 200px;
+      text-align: right;
+      // align-self: flex-end;
+    }
+  }
+}

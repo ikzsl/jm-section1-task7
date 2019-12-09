@@ -3,15 +3,16 @@
   font-family: $TTLakes;
   background-color: $background;
   padding: 0;
-  
+
 
   &__nav {
     margin-bottom: 24px;
+
   }
 
   &__nav-menu {
-    overflow: hidden;
     padding-left: 16px;
+    overflow-x: hidden;
   }
 
   &__header {
@@ -21,12 +22,22 @@
   }
 
   &__action-menu {
-    display: flex;
+    display: none;
     justify-content: flex-end;
   }
 
   &__action-item {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services {
+
+    &__action-menu {
+      display: flex;
+    }
+
   }
 }

@@ -4,7 +4,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require("autoprefixer");
 
+
+
 module.exports = {
+
+  devServer: {
+    port: 8888,
+  },
+
   // Входной файл
   entry: [
     './src/js/index.js'
@@ -24,7 +31,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
-        exclude: /node_modules/,
+        exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
         use: {
           loader: 'babel-loader',
           options: {

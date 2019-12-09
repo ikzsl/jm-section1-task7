@@ -1,5 +1,4 @@
 import '../scss/style.scss';
-import './swiper.js';
 
 let brands = document.querySelector('.brands');
 let brandsList = brands.querySelector('.brands__list');
@@ -38,5 +37,53 @@ menuButton.addEventListener('click', showNavbar);
 
 //-------------------------------------------------
 
+
+
+// var swiper = new Swiper('.swiper-container', {
+//   slidesPerView: 3,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
+
+
+if (window.matchMedia("(min-width: 768px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+  var swiper1 = null;
+
+} else {
+  /* the viewport is less than 400 pixels wide */
+
+  var swiper1 = new Swiper('.swiper1', {
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination1',
+      clickable: true,
+      type: 'bullets',
+    },
+
+  });
+
+  var swiper2 = new Swiper('.swiper2', {
+    slidesPerView: 1.2,
+    pagination: {
+      el: '.swiper-pagination2',
+      clickable: true,
+      type: 'bullets',
+    },
+  });
+
+  var swiper3 = new Swiper('.swiper3', {
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination3',
+      clickable: true,
+      type: 'bullets',
+    },
+
+  });
+
+}
 
 
