@@ -1,9 +1,44 @@
 .main-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 88px;
-  width: 95vw;
-  padding: 16px;
+  width: 100vw;
+  min-width: 320px;
+  padding: 0 16px;
   background-color: #ffffff;
+
+  &__menu-button {
+    margin-right: 16px;
+  }
+
+  &__logo {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    &__menu-button {
+      position: relative;
+      margin-right: 40px;
+
+      &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 2px;
+        height: 32px;
+        bottom: 4px;
+        right: -20px;
+        background-color: $silver;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: none;
+  }
 }

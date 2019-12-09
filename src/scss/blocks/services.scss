@@ -3,11 +3,14 @@
   font-family: $TTLakes;
   background-color: $background;
   padding: 0;
-  // border: 1px solid red;
+  
+
+  &__nav {
+    margin-bottom: 24px;
+  }
 
   &__nav-menu {
     overflow: hidden;
-    width: 90vw;
     padding-left: 16px;
   }
 

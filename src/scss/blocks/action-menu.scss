@@ -1,22 +1,38 @@
 .action-menu {
+  position: relative;
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  border-left: 2px solid $silver;
-  width: 132px;
+  justify-content: space-between;
+
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 32px;
+    bottom: 4px;
+    left: -20px;
+    background-color: $silver;
+  }
+
+  &__item {
+    padding-right: 16px;
+
+    &:last-of-type {
+      padding: 0;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .action-menu {
-
     &__item {
-      padding-left: 30px;
       height: 40px;
       color: inherit;
       font-family: $TTLakes;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 16px;
       line-height: 24px;
     }

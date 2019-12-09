@@ -3,9 +3,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  
-
-
 
   &__item {
     font-family: $TTLakes;
@@ -36,5 +33,11 @@
       background-color: white;
       border: 2px solid $cyan;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-submenu {
+    flex-wrap: wrap;
   }
 }

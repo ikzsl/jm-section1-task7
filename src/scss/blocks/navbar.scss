@@ -1,21 +1,35 @@
+@keyframes navbar {
+  from {
+    left: -320px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
 .navbar {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  // position: absolute;
+  position: absolute;
   float: left;
   width: 320px;
   height: 100vh;
   background-color: #ffffff;
   z-index: 10;
-  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2), -2px 0 4px rgba(69, 79, 126, 0.02);
   box-sizing: border-box;
-  padding: 24px;
+  padding: 16px;
   font-family: $TTLakes;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: $black;
+
+  &--on {
+    display: flex;
+    animation: navbar 0.3s ease-out;
+  }
 
   &__header {
     display: flex;
@@ -24,7 +38,7 @@
   }
 
   &__logo {
-    padding-left: 10px;
+    padding-left: 16px;
     flex-grow: 1;
   }
 
@@ -105,8 +119,30 @@
   }
 }
 
+@media (min-width: $mobile-wide-width) {
+  .navbar {
+    width: 360px;
+    padding: 16px 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navbar {
+    width: 320px;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2), -2px 0 4px rgba(69, 79, 126, 0.02);
+  }
+}
+
 @media (min-width: $desktop-width) {
   .navbar {
+    position: static;
+    min-width: 305px;
+    box-shadow: none;
+
     display: flex;
+
+    &__close-button {
+      display: none;
+    }
   }
 }
