@@ -931,6 +931,21 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     line-height: 24px; } }
 
+@media (min-width: 1120px) {
+  .action-menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    visibility: visible; }
+    .action-menu::before {
+      display: none; }
+    .action-menu__item {
+      width: 200px;
+      text-align: right; } }
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -946,7 +961,8 @@ button.swiper-pagination-bullet {
   margin-bottom: 4px;
   position: relative; }
   .main__desc {
-    padding: 0 16px; }
+    padding: 0 16px;
+    margin-bottom: 16px; }
   .main__desc-wrapper {
     height: 90px;
     overflow: hidden;
@@ -976,9 +992,10 @@ button.swiper-pagination-bullet {
             justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    padding: 0 24px;
+    padding-bottom: 26px; }
     .main__desc {
-      padding: 0 24px;
       width: 50%; }
     .main__desc-wrapper {
       height: 160px;
@@ -1000,7 +1017,9 @@ button.swiper-pagination-bullet {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow-x: scroll;
+  width: 100vw; }
   .nav-submenu__item {
     font-family: "TTLakes", "Arial", sans-serif;
     font-weight: 600;
@@ -1028,7 +1047,8 @@ button.swiper-pagination-bullet {
 @media (min-width: 1120px) {
   .nav-submenu {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+    width: auto; } }
 
 .nav-menu {
   list-style: none;
@@ -1070,8 +1090,8 @@ button.swiper-pagination-bullet {
   .services__nav {
     margin-bottom: 24px; }
   .services__nav-menu {
-    overflow: hidden;
-    padding-left: 16px; }
+    padding-left: 16px;
+    overflow-x: hidden; }
   .services__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1081,15 +1101,19 @@ button.swiper-pagination-bullet {
             justify-content: space-between;
     padding: 16px; }
   .services__action-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
   .services__action-item {
     margin: 0;
     padding: 0; }
+
+@media (min-width: 1120px) {
+  .services__action-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .btn {
   width: 40px;
@@ -1151,6 +1175,19 @@ button.swiper-pagination-bullet {
   .btn--profile {
     background-image: url(./static/icon-profile.svg);
     background-size: 20px; }
+
+@media (min-width: 1120px) {
+  .btn {
+    position: relative; }
+    .btn__lable {
+      vertical-align: middle;
+      height: 40px;
+      position: absolute;
+      left: -140px;
+      top: 7px;
+      visibility: visible;
+      display: inline-block;
+      color: #1b1c21; } }
 
 @-webkit-keyframes navbar {
   from {
@@ -1338,8 +1375,7 @@ input:focus + .lang-toggle__item {
             align-items: center;
     list-style: none;
     padding: 16px;
-    margin: 0;
-    overflow-x: scroll; }
+    margin: 0; }
   .brands__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1525,8 +1561,7 @@ input:focus + .lang-toggle__item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 16px 8px;
-      overflow-x: scroll; }
+      padding: 16px 8px; }
   .price-list__table-row {
     position: relative;
     display: -webkit-box;
@@ -1754,7 +1789,10 @@ input:focus + .lang-toggle__item {
   margin: 0 auto; }
 
 .main-wrapper {
-  color: inherit; }
+  color: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .section-headline {
   text-transform: uppercase;
@@ -1803,7 +1841,6 @@ input:focus + .lang-toggle__item {
       -ms-flex-align: center;
           align-items: center;
   height: 88px;
-  width: 100vw;
   min-width: 320px;
   padding: 0 16px;
   background-color: #ffffff; }
@@ -1831,6 +1868,21 @@ input:focus + .lang-toggle__item {
 @media (min-width: 1120px) {
   .main-header {
     display: none; } }
+
+.swiper-wrapper {
+  width: 320px; }
+
+.swiper-pagination1 {
+  text-align: center;
+  display: block; }
+
+.swiper-pagination2 {
+  text-align: center;
+  display: block; }
+
+.swiper-pagination3 {
+  text-align: center;
+  display: block; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
