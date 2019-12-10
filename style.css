@@ -1497,7 +1497,9 @@ input:focus + .lang-toggle__item {
     display: inline-block; } }
 
 .button-arrow {
-  position: relative; }
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .button-arrow::before {
     content: "";
     position: absolute;
