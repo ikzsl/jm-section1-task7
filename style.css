@@ -1055,7 +1055,7 @@ button.swiper-pagination-bullet {
   padding: 0; }
   .nav-menu__item {
     font-family: "TTLakes", "Arial", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #1b1c21; }
@@ -1274,7 +1274,7 @@ button.swiper-pagination-bullet {
     position: relative;
     width: 40px;
     height: 40px;
-    padding-right: 16px; }
+    margin-right: 16px; }
   .navbar__contact-action-link::before {
     position: absolute;
     content: "";
@@ -1314,7 +1314,8 @@ button.swiper-pagination-bullet {
     .navbar__contact-tel:active {
       color: #ff3e79; }
   .navbar__lang-toggle {
-    padding: 40px 0 20px; }
+    padding: 40px 0 20px;
+    list-style: none; }
 
 @media (min-width: 360px) {
   .navbar {
@@ -1352,8 +1353,15 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
     cursor: pointer;
     padding: 2px; }
-    .lang-toggle__item:focus {
+  .lang-toggle__link {
+    text-decoration: none;
+    color: inherit; }
+    .lang-toggle__link:active, .lang-toggle__link:hover {
+      color: #7e7e82; }
+    .lang-toggle__link:focus {
       color: #ff3e79; }
+    .lang-toggle__link--active {
+      color: #7e7e82; }
 
 input:checked + .lang-toggle__item,
 input:active + .lang-toggle__item {
@@ -1560,7 +1568,8 @@ input:focus + .lang-toggle__item {
       border: 1px solid #ffffff; }
 
 .price-list {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  padding-bottom: 47px; }
   .price-list__header-row {
     display: none; }
   .price-list__table {
@@ -1756,7 +1765,8 @@ input:focus + .lang-toggle__item {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  color: #7e7e82; }
+  color: #7e7e82;
+  background-color: #f8f8f8; }
   .main-footer a {
     text-decoration: none;
     color: inherit; }
