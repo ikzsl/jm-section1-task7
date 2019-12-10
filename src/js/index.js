@@ -53,24 +53,17 @@ menuButton.addEventListener('click', showNavbar);
 var mediaQueryList = window.matchMedia("(min-width: 768px)");
 var swiper1;
 
-if (mediaQueryList.matches) {
-
-
-
-} else {
-  /* the viewport is less than 999 pixels wide */
+if (!mediaQueryList.matches) {
   swiper1 = new Swiper('.swiper1', {
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination1',
     },
-
-
   });
 
 
   var swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 1.2,
+    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination2',
       type: 'bullets',
