@@ -8,11 +8,25 @@
 
   &__item {
     text-transform: uppercase;
+
     cursor: pointer;
     padding: 2px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    &:active,
+    &:hover {
+      color: $gray;
+    }
 
     &:focus {
       color: $red;
+    }
+
+    &--active {
+      color: $gray;
     }
   }
 }

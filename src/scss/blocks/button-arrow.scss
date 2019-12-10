@@ -1,5 +1,6 @@
 .button-arrow {
   position: relative;
+  box-sizing: border-box;
 
   &::before {
     content: "";

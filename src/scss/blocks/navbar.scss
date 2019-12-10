@@ -59,7 +59,7 @@
     position: relative;
     width: 40px;
     height: 40px;
-    padding-right: 16px;
+    margin-right: 16px;
   }
 
   &__contact-action-link {
@@ -116,6 +116,8 @@
 
   &__lang-toggle {
     padding: 40px 0 20px;
+    list-style: none;
+
   }
 }
 

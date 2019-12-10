@@ -1,5 +1,6 @@
 .price-list {
   background-color: $background;
+  padding-bottom: 47px;
 
   &__header-row {
     display: none;
@@ -56,6 +57,19 @@
     background-color: $red;
     border-radius: 16px;
     padding: 5px 40px 5px 10px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px $red;
+      transition: all 0.2s ease-in-out;
+      color: $red;
+      background-color: #ffffff;
+
+      &::before {
+        border-color: $red;
+        transition: border-color 0.2s ease-in-out;
+      }
+    }
 
     &::before {
       position: absolute;

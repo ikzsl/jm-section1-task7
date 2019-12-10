@@ -25,5 +25,12 @@
     color: inherit;
     background-color: #ffffff;
 
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px $red;
+      transition: box-shadow 0.2s ease-in-out;
+      border: 1px solid #ffffff;
+    }
+
   }
 }
