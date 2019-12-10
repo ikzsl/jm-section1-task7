@@ -1882,6 +1882,13 @@ input:focus + .lang-toggle__item {
   text-align: center;
   display: block; }
 
+.swiper-pagination-bullet {
+  margin: 0 4px; }
+
+@media (min-width: 768px) {
+  .swiper-pagination1, .swiper-pagination2, .swiper-pagination3 {
+    display: none; } }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
