@@ -48,42 +48,80 @@ menuButton.addEventListener('click', showNavbar);
 // });
 
 
-if (window.matchMedia("(min-width: 768px)").matches) {
-  /* the viewport is at least 400 pixels wide */
-  var swiper1 = null;
+
+
+var mediaQueryList = window.matchMedia("(min-width: 768px)");
+var swiper1;
+
+if (mediaQueryList.matches) {
+
+
 
 } else {
-  /* the viewport is less than 400 pixels wide */
-
-  var swiper1 = new Swiper('.swiper1', {
+  /* the viewport is less than 999 pixels wide */
+  swiper1 = new Swiper('.swiper1', {
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination1',
-      clickable: true,
-      type: 'bullets',
     },
 
+
   });
+
 
   var swiper2 = new Swiper('.swiper2', {
     slidesPerView: 1.2,
     pagination: {
       el: '.swiper-pagination2',
-      clickable: true,
       type: 'bullets',
     },
   });
 
   var swiper3 = new Swiper('.swiper3', {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination3',
-      clickable: true,
       type: 'bullets',
     },
 
   });
 
+
+
 }
 
+var onWidthCange = function (e) {
+
+
+  if (e.matches & Boolean(swiper1)) {
+
+    swiper1.destroy();
+    swiper2.destroy();
+    swiper3.destroy();
+
+  } else {
+    swiper1 = new Swiper('.swiper1', {
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination1',
+      },
+    });
+
+    swiper2 = new Swiper('.swiper2', {
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination2',
+      },
+    });
+
+    swiper3 = new Swiper('.swiper3', {
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination3',
+      },
+    });
+  }
+}
+
+mediaQueryList.addListener(onWidthCange);
 
