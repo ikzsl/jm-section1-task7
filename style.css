@@ -1549,6 +1549,15 @@ input:focus + .lang-toggle__item {
     text-decoration: none;
     color: inherit;
     background-color: #ffffff; }
+    .repair-types__link:hover, .repair-types__link:focus {
+      -webkit-box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #ff3e79;
+              box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #ff3e79;
+      -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+      transition: -webkit-box-shadow 0.2s ease-in-out;
+      -o-transition: box-shadow 0.2s ease-in-out;
+      transition: box-shadow 0.2s ease-in-out;
+      transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+      border: 1px solid #ffffff; }
 
 .price-list {
   background-color: #f8f8f8; }
@@ -1604,6 +1613,19 @@ input:focus + .lang-toggle__item {
     background-color: #ff3e79;
     border-radius: 16px;
     padding: 5px 40px 5px 10px; }
+    .price-list__order:hover, .price-list__order:focus {
+      -webkit-box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #ff3e79;
+              box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #ff3e79;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      color: #ff3e79;
+      background-color: #ffffff; }
+      .price-list__order:hover::before, .price-list__order:focus::before {
+        border-color: #ff3e79;
+        -webkit-transition: border-color 0.2s ease-in-out;
+        -o-transition: border-color 0.2s ease-in-out;
+        transition: border-color 0.2s ease-in-out; }
     .price-list__order::before {
       position: absolute;
       content: "";
