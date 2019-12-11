@@ -1,18 +1,15 @@
 .services {
   display: block;
-  font-family: $TTLakes;
   background-color: $background;
   padding: 0;
 
-
   &__nav {
     margin-bottom: 24px;
-
   }
 
   &__nav-menu {
     padding-left: 16px;
-    overflow-x: hidden;
+    overflow-x: scroll;
   }
 
   &__header {
@@ -30,14 +27,15 @@
     margin: 0;
     padding: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .services {
-
+  @media (min-width: $desktop-width) {
     &__action-menu {
       display: flex;
     }
 
+    &__nav-menu {
+      overflow: visible;
+    }
   }
 }
+

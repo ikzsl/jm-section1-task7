@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import Swiper from 'swiper';
 
 let brands = document.querySelector('.brands');
 let brandsList = brands.querySelector('.brands__list');
@@ -50,14 +51,18 @@ menuButton.addEventListener('click', showNavbar);
 
 
 
-var mediaQueryList = window.matchMedia("(min-width: 768px)");
-var swiper1;
+var mediaQueryList = window.matchMedia("(max-width: 768px)");
+// var swiper;
 
-if (!mediaQueryList.matches) {
-  swiper1 = new Swiper('.swiper1', {
+if (mediaQueryList.matches) {
+
+
+
+ var swiper1 = new Swiper('.swiper1', {
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination1',
+      type: 'bullets',
     },
   });
 
@@ -83,38 +88,40 @@ if (!mediaQueryList.matches) {
 
 }
 
-var onWidthCange = function (e) {
+// var onWidthCange = function (e) {
 
 
-  if (e.matches & Boolean(swiper1)) {
+//   if (e.matches & Boolean(swiper1)) {
 
-    swiper1.destroy();
-    swiper2.destroy();
-    swiper3.destroy();
+//     swiper1.destroy();
+//     swiper2.destroy();
+//     swiper3.destroy();
 
-  } else {
-    swiper1 = new Swiper('.swiper1', {
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination1',
-      },
-    });
+//   } else {
+//     swiper1 = new Swiper('.swiper1', {
+//       slidesPerView: 'auto',
+//       pagination: {
+//         el: '.swiper-pagination1',
+//         type: 'bullets',
+//       },
+//     });
 
-    swiper2 = new Swiper('.swiper2', {
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination2',
-      },
-    });
+//     swiper2 = new Swiper('.swiper2', {
+//       slidesPerView: 'auto',
+//       pagination: {
+//         el: '.swiper-pagination2',
+//         type: 'bullets',
+//       },
+//     });
 
-    swiper3 = new Swiper('.swiper3', {
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination3',
-      },
-    });
-  }
-}
+//     swiper3 = new Swiper('.swiper3', {
+//       slidesPerView: 'auto',
+//       pagination: {
+//         el: '.swiper-pagination3',
+//       },
+//     });
+//   }
+// }
 
-mediaQueryList.addListener(onWidthCange);
+// mediaQueryList.addListener(onWidthCange);
 

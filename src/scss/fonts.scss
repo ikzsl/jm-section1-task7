@@ -4,6 +4,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/TTLakes-Regular.woff2") format("woff2"), url("../fonts/TTLakes-Regular.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -11,10 +12,12 @@
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/TTLakes-Medium.woff2") format("woff2"), url("../fonts/TTLakes-Medium.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "TTLakes";
   font-weight: 700;
   src: url("../fonts/TTLakes-Bold.woff2") format("woff2"), url("../fonts/TTLakes-Bold.woff") format("woff");
+  font-display: swap;
 }
