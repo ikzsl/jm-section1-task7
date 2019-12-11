@@ -884,18 +884,21 @@ button.swiper-pagination-bullet {
   font-family: "TTLakes";
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/TTLakes-Regular.woff2) format("woff2"), url(./fonts/TTLakes-Regular.woff) format("woff"); }
+  src: url(./fonts/TTLakes-Regular.woff2) format("woff2"), url(./fonts/TTLakes-Regular.woff) format("woff");
+  font-display: swap; }
 
 @font-face {
   font-family: "TTLakes";
   font-style: normal;
   font-weight: 500;
-  src: url(./fonts/TTLakes-Medium.woff2) format("woff2"), url(./fonts/TTLakes-Medium.woff) format("woff"); }
+  src: url(./fonts/TTLakes-Medium.woff2) format("woff2"), url(./fonts/TTLakes-Medium.woff) format("woff");
+  font-display: swap; }
 
 @font-face {
   font-family: "TTLakes";
   font-weight: 700;
-  src: url(./fonts/TTLakes-Bold.woff2) format("woff2"), url(./fonts/TTLakes-Bold.woff) format("woff"); }
+  src: url(./fonts/TTLakes-Bold.woff2) format("woff2"), url(./fonts/TTLakes-Bold.woff) format("woff");
+  font-display: swap; }
 
 .action-menu {
   position: relative;
@@ -926,7 +929,6 @@ button.swiper-pagination-bullet {
   .action-menu__item {
     height: 40px;
     color: inherit;
-    font-family: "TTLakes", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px; } }
@@ -1021,7 +1023,6 @@ button.swiper-pagination-bullet {
   overflow-x: scroll;
   width: 100vw; }
   .nav-submenu__item {
-    font-family: "TTLakes", "Arial", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -1054,7 +1055,6 @@ button.swiper-pagination-bullet {
   list-style: none;
   padding: 0; }
   .nav-menu__item {
-    font-family: "TTLakes", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -1084,14 +1084,13 @@ button.swiper-pagination-bullet {
 
 .services {
   display: block;
-  font-family: "TTLakes", "Arial", sans-serif;
   background-color: #f8f8f8;
   padding: 0; }
   .services__nav {
     margin-bottom: 24px; }
   .services__nav-menu {
     padding-left: 16px;
-    overflow-x: hidden; }
+    overflow-x: scroll; }
   .services__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1108,12 +1107,13 @@ button.swiper-pagination-bullet {
   .services__action-item {
     margin: 0;
     padding: 0; }
-
-@media (min-width: 1120px) {
-  .services__action-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+  @media (min-width: 1120px) {
+    .services__action-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .services__nav-menu {
+      overflow: visible; } }
 
 .btn {
   width: 40px;
@@ -1191,18 +1191,20 @@ button.swiper-pagination-bullet {
 
 @-webkit-keyframes navbar {
   from {
-    left: -320px; }
+    left: calc(-100vw); }
   to {
     left: 0; } }
 
 @keyframes navbar {
   from {
-    left: -320px; }
+    left: calc(-100vw); }
   to {
     left: 0; } }
 
 .navbar {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1210,26 +1212,29 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
+  position: fixed;
+  left: calc(-100vw);
   float: left;
-  width: 320px;
+  width: 100vw;
   height: 100vh;
   background-color: #ffffff;
   z-index: 10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 16px;
-  font-family: "TTLakes", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #1b1c21; }
+  color: #1b1c21;
+  -webkit-transition: left 0.3s ease-out;
+  -o-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out; }
   .navbar--on {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-animation: navbar 0.3s ease-out;
-            animation: navbar 0.3s ease-out; }
+    visibility: visible;
+    left: 0;
+    -webkit-transition: left 0.3s ease-out;
+    -o-transition: left 0.3s ease-out;
+    transition: left 0.3s ease-out; }
   .navbar__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1301,7 +1306,6 @@ button.swiper-pagination-bullet {
       color: #ff3e79; }
   .navbar__contact-tel {
     color: inherit;
-    font-family: "TTLakes", "Arial", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -1319,7 +1323,6 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 360px) {
   .navbar {
-    width: 360px;
     padding: 16px 24px; } }
 
 @media (min-width: 768px) {
@@ -1344,7 +1347,6 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "TTLakes", "Arial", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -1447,7 +1449,6 @@ input:focus + .lang-toggle__item {
   position: relative;
   text-decoration: none;
   text-align: left;
-  font-family: "TTLakes", "Arial", sans-serif;
   font-weight: 500;
   color: #1b1c21;
   font-size: 16px;
@@ -1817,7 +1818,8 @@ input:focus + .lang-toggle__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .main-wrapper {
   color: inherit;
@@ -1847,7 +1849,6 @@ input:focus + .lang-toggle__item {
 .headline {
   position: relative;
   margin: 0;
-  font-family: "TTLakes", "Arial", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
