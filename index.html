@@ -14,8 +14,8 @@
 <body>
   <div class="wrapper">
     <section class="navbar">
+      <h2 class="visually-hidden">Блок навигации</h2>
       <div class="navbar__header">
-
         <button type="button" id="close-button" class="navbar__close-button btn btn--close"></button>
         <a class="navbar__logo"><img src="img/logo.png" alt="Логотип CPS"></a>
         <a href="#" class="btn btn--search"></a>
@@ -68,16 +68,16 @@
 
 
         <ul class="main-header__contact-menu contact-menu">
-            <li class="contact-menu__item">
-              <a href="#" class="btn btn--call" aria-label="Позвонить"></a>
-            </li>
-            <li class="contact-menu__item">
-              <a href="#" class="btn btn--chat" aria-label="Написать в чат"></a>
-            </li>
-            <li class="contact-menu__item">
-              <a href="#" class="btn btn--profile" aria-label="Профиль"></a>
-            </li>
-          </ul>
+          <li class="contact-menu__item">
+            <a href="#" class="btn btn--call" aria-label="Позвонить"></a>
+          </li>
+          <li class="contact-menu__item">
+            <a href="#" class="btn btn--chat" aria-label="Написать в чат"></a>
+          </li>
+          <li class="contact-menu__item">
+            <a href="#" class="btn btn--profile" aria-label="Профиль"></a>
+          </li>
+        </ul>
 
 
         <ul class="main-header__action-menu action-menu">
@@ -130,7 +130,7 @@
           </ul>
         </nav>
 
-        <main class="services__main content">
+        <div class="services__main content">
           <div class="content__desc">
             <div class="content__desc-wrapper">
               <div class="content__text-wrapper">
@@ -145,7 +145,7 @@
           </div>
 
           <img class="content__image" src="img/services-img.webp" alt="">
-        </main>
+        </div>
 
       </section>
 
@@ -213,18 +213,18 @@
 
       <section class="price-list">
         <h2 class="price-list__headline section-headline">Цены на услуги</h2>
-        <div class="price-list__table swiper-container swiper3">
-          <div class="price-list__table-header">
-            <ol class="price-list__header-row">
+        <ul class="price-list__table swiper-container swiper3">
+          <li class="price-list__header">
+            <ul class="price-list__header-row">
               <li>Ремонтные услуги</li>
               <li>Цена</li>
               <li>Срок</li>
               <li></li>
-            </ol>
-          </div>
+            </ul>
+          </li>
 
-          <ul class="swiper-wrapper">
-            <dl class="price-list__table-row swiper-slide">
+          <li class="price-list__items swiper-wrapper">
+            <dl class="price-list__item swiper-slide">
               <dt>Ремонтные услуги</dt>
               <dd>Диагностика</dd>
               <dt>Цена</dt>
@@ -234,7 +234,7 @@
               <dd><a href="#" class="price-list__order">Заказать</a></dd>
             </dl>
 
-            <dl class="price-list__table-row swiper-slide">
+            <dl class="price-list__item swiper-slide">
               <dt>Ремонтные услуги</dt>
               <dd>Замена дисплея</dd>
               <dt>Цена</dt>
@@ -244,7 +244,7 @@
               <dd><a href="#" class="price-list__order">Заказать</a></dd>
             </dl>
 
-            <dl class="price-list__table-row swiper-slide">
+            <dl class="price-list__item swiper-slide">
               <dt>Ремонтные услуги</dt>
               <dd>Замена полифонического динамика</dd>
               <dt>Цена</dt>
@@ -254,7 +254,7 @@
               <dd><a href="#" class="price-list__order">Заказать</a></dd>
             </dl>
 
-            <dl class="price-list__table-row swiper-slide">
+            <dl class="price-list__item swiper-slide">
               <dt>Ремонтные услуги</dt>
               <dd>Тестирование с выдачей технического заключения</dd>
               <dt>Цена</dt>
@@ -264,22 +264,21 @@
               <dd><a href="#" class="price-list__order">Заказать</a></dd>
             </dl>
 
-            <ul class="price-list__table-row swiper-slide">
-              <li>Ремонтные услуги</li>
-              <li>Замена программного обеспечения</li>
-              <li>Цена</li>
-              <li>1 000 ₽</li>
-              <li>Срок</li>
-              <li>30-120 мин</li>
-              <a href="#" class="price-list__order">Заказать</a>
-            </ul>
+            <dl class="price-list__item swiper-slide">
+              <dt>Ремонтные услуги</dt>
+              <dd>Замена программного обеспечения</dd>
+              <dt>Цена</dt>
+              <dd>1 000 ₽</dd>
+              <dt>Срок</dt>
+              <dd>30-120 мин</dd>
+              <dd><a href="#" class="price-list__order">Заказать</a></dd>
+            </dl>
 
-          </ul>
+          </li>
+          <li class="swiper-pagination3"></li>
+        </ul>
 
 
-
-        </div>
-        <span class="swiper-pagination3"></span>
 
         <p class="price-list__description">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
           Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
