@@ -8,17 +8,15 @@
 
   &__table {
     display: block;
-
-    & tbody {
-      display: flex;
-      padding: 16px 8px;
-      // overflow-x: scroll;
-    }
   }
 
-  &__table-row {
+  &__items {
+    margin: 0 8px 16px;
+  }
+
+  &__item {
     position: relative;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: flex-start;
     background-color: #ffffff;
@@ -28,19 +26,26 @@
     margin-right: 16px;
     padding: 16px;
     flex-shrink: 0;
+    box-sizing: border-box;
 
-    & th {
+    & dt {
       font-weight: 500;
       font-size: 14px;
       line-height: 16px;
+      padding-bottom: 4px;
       color: $gray;
     }
 
-    & td {
+    & dd {
       padding-bottom: 16px;
+      margin: 0;
       font-weight: 400;
       font-size: 14px;
       line-height: 16px;
+
+      &:last-child {
+        padding: 0;
+      }
     }
   }
 
@@ -91,6 +96,8 @@
     line-height: 20px;
     color: $black;
     padding-left: 16px;
+    margin: 0;
+    margin-bottom: 16px;
   }
 
   &__offer {
@@ -104,7 +111,6 @@
     text-decoration: none;
     padding-left: 16px;
 
-
     &::after {
       position: absolute;
       display: inline-block;
@@ -117,34 +123,17 @@
       transform: rotate(-45deg);
     }
   }
-}
-
-@media (min-width: $tablet-width) {
-  .price-list {
-    &__order {
-      position: relative;
-      bottom: 0;
-      right: 0;
-      display: inline-block;
-    }
-
+  @media (min-width: $tablet-width) {
     &__table {
-      & tbody {
-        flex-direction: column;
-        align-items: stretch;
-        width: auto;
-        overflow-x: visible;
-        border-radius: 16px;
-        // padding: 16px;
-        // margin-left: 16px;
-      }
+      padding: 0 24px 24px;
     }
 
-    &__table-header {
+    &__header {
       display: block;
     }
 
     &__header-row {
+      list-style: none;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -155,7 +144,7 @@
       padding: 16px;
       text-align: left;
 
-      & td {
+      & li {
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
@@ -179,28 +168,38 @@
       }
     }
 
-    &__table-row {
+    &__items {
+      flex-direction: column;
+      align-items: stretch;
+      width: auto;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 0 16px;
+      margin: 0;
+    }
+
+    &__item {
+      display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       width: auto;
       height: 64px;
       margin-right: 0;
-
-      padding: 16px;
-
+      padding: 16px 0;
       border-bottom: 1px solid $silver;
       border-radius: 0;
+      background-color: transparent;
 
       &:nth-last-of-type(1) {
         border: none;
       }
 
-      & th {
+      & dt {
         display: none;
       }
 
-      & td {
+      & dd {
         padding: 0;
 
         &:nth-child(2) {
@@ -219,6 +218,19 @@
           width: 120px;
         }
       }
+    }
+
+    &__order {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__table {
+      padding: 0 32px 32px;
     }
   }
 }

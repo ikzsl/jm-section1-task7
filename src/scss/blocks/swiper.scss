@@ -2,7 +2,11 @@
   // height: 200px;
   min-width: 320px;
   // overflow: hidden;
+  width: auto;
+
 }
+
+
 
 .swiper-pagination1 {
   // margin: 0 auto;
@@ -26,7 +30,12 @@
 }
 
 .swiper-pagination-bullet {
-  margin: 0 4px;
+  width: 12px;
+  height: 12px;
+
+
+    background-color: #B5B6BC;
+
 }
 
 @media (min-width: $tablet-width) {
@@ -36,5 +45,11 @@
     &3 {
       display: none;
     }
+  }
+
+
+  .swiper-slide {
+    width: auto;
+    height: auto;
   }
 }

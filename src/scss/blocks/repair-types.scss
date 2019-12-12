@@ -1,8 +1,7 @@
 .repair-types {
-  display: flex;
-  flex-direction: column;
-
+  display: block;
   background-color: $background;
+  padding-bottom: 16px;
 
   &__list {
     display: flex;
@@ -10,11 +9,11 @@
     list-style: none;
     padding: 16px;
     margin: 0;
-    // overflow-x: scroll;
+
   }
 
   &__link {
-    display: inline-block;
+    display: block;
     width: 240px;
     height: 160px;
     border: 1px solid $silver;
@@ -31,6 +30,29 @@
       transition: box-shadow 0.2s ease-in-out;
       border: 1px solid #ffffff;
     }
+  }
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+    &__list {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 16px;
+      margin: 0;
+      height: 160px;
+      overflow: hidden;
+    }
+
+    &__link {
+      margin: 0 16px 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+
+    &__link {
+      margin: 0 6px 16px;
+    }
   }
 }

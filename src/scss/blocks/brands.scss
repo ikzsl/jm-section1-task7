@@ -1,15 +1,14 @@
 .brands {
   background-color: #f8f8f8;
+  padding-bottom: 16px;
 
   &__list {
     box-sizing: border-box;
-    // display: flex;
-    // flex-direction: column;
     align-items: center;
     list-style: none;
     padding: 16px;
+    padding-bottom: 0;
     margin: 0;
-    // overflow-x: scroll;
   }
 
   &__link {
@@ -17,6 +16,7 @@
     justify-content: flex-start;
     padding-left: 16px;
     margin-right: 16px;
+    margin-bottom: 16px;
     align-items: center;
     box-sizing: border-box;
     height: 72px;
@@ -37,33 +37,39 @@
 @media (min-width: $tablet-width) {
   .brands {
 
+    padding-bottom: 32px;
+
     &__headline {
       padding: 16px 12px 16px;
       background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
     }
 
     &__list {
-      justify-content: space-between;
+      display: flex;
+      justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
+      padding: 24px;
 
       &--rolled {
-        height: 170px;
+        height: 200px;
         overflow: hidden;
       }
     }
 
     &__link {
       min-width: 224px;
+      margin: 0 16px 16px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .brands {
+    padding-bottom: 50px;
 
     &__list {
-      align-content: space-between;
+
 
       &--rolled {
         overflow: hidden;
@@ -72,6 +78,7 @@
 
     &__link {
       min-width: 240px;
+      margin: 0 6px 16px;
 
     }
   }

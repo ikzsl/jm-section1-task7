@@ -4,20 +4,19 @@ import Swiper from 'swiper';
 let brands = document.querySelector('.brands');
 let brandsList = brands.querySelector('.brands__list');
 let brandsUnrollButton = brands.querySelector('.unroll');
-let toggleList = function () {
+let toggleBrandsList = function () {
   brandsList.classList.toggle('brands__list--rolled');
 
   brandsUnrollButton.classList.toggle('unroll--rolled');
   if (brands.querySelector('.brands__list--rolled')) {
     brandsUnrollButton.textContent = 'Показать все';
-
   } else {
     brandsUnrollButton.textContent = 'Скрыть';
   }
 };
-brandsUnrollButton.addEventListener('click', toggleList);
+brandsUnrollButton.addEventListener('click', toggleBrandsList);
 
-// Показ-скрытие меню
+// Показ-скрытие бокового меню
 let menuButton = document.querySelector('.main-header__menu-button');
 let navBar = document.querySelector('.navbar');
 let closeButton = navBar.querySelector('.navbar__close-button');
@@ -36,29 +35,17 @@ let hideNavbar = function () {
 
 menuButton.addEventListener('click', showNavbar);
 
-//-------------------------------------------------
 
 
 
-// var swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 3,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-// });
+// Swiperjs
 
+var mediaQueryList = window.matchMedia("(min-width: 768px)");
 
-
-
-var mediaQueryList = window.matchMedia("(max-width: 768px)");
-// var swiper;
-
-if (mediaQueryList.matches) {
-
-
+if (!mediaQueryList.matches) {
 
  var swiper1 = new Swiper('.swiper1', {
+
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination1',
@@ -83,45 +70,6 @@ if (mediaQueryList.matches) {
     },
 
   });
-
-
-
 }
 
-// var onWidthCange = function (e) {
-
-
-//   if (e.matches & Boolean(swiper1)) {
-
-//     swiper1.destroy();
-//     swiper2.destroy();
-//     swiper3.destroy();
-
-//   } else {
-//     swiper1 = new Swiper('.swiper1', {
-//       slidesPerView: 'auto',
-//       pagination: {
-//         el: '.swiper-pagination1',
-//         type: 'bullets',
-//       },
-//     });
-
-//     swiper2 = new Swiper('.swiper2', {
-//       slidesPerView: 'auto',
-//       pagination: {
-//         el: '.swiper-pagination2',
-//         type: 'bullets',
-//       },
-//     });
-
-//     swiper3 = new Swiper('.swiper3', {
-//       slidesPerView: 'auto',
-//       pagination: {
-//         el: '.swiper-pagination3',
-//       },
-//     });
-//   }
-// }
-
-// mediaQueryList.addListener(onWidthCange);
-
+// swiper1.destroy();

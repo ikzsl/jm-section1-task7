@@ -1,0 +1,12 @@
+.contact-menu {
+
+    list-style: none;
+    padding: 0;
+
+  &__item {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+}

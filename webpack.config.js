@@ -9,7 +9,7 @@ const autoprefixer = require("autoprefixer");
 module.exports = {
 
   devServer: {
-    port: 8888,
+    port: 7777,
   },
 
   // Входной файл
