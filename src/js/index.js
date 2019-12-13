@@ -80,6 +80,76 @@ let hideNavbar = function () {
 menuButton.addEventListener('click', showNavbar);
 
 
+// Показ-скрытие модального окна 'Обратная связь'
+
+let feedbackModal = document.querySelector('.feedback');
+let closeFeedbackModalButton = feedbackModal.querySelector('.feedback__close');
+let feedbackButtons = document.querySelectorAll('.btn--chat');
+
+let showFeedbackModal = function () {
+  feedbackModal.classList.toggle('feedback--off');
+  for(var i = 0; i < feedbackButtons.length; i++) {
+    feedbackButtons[i].removeEventListener('click', showFeedbackModal);
+  }
+
+  closeFeedbackModalButton.addEventListener('click', closeFeedbackModal);
+  popupLayer.classList.remove('popup-layer--off');
+  popupLayer.classList.remove('popup-layer--modal');
+}
+
+let closeFeedbackModal = function () {
+  feedbackModal.classList.toggle('feedback--off');
+for(var i = 0; i < feedbackButtons.length; i++) {
+  feedbackButtons[i].removeEventListener('click', closeFeedbackModal);
+}
+for(var i = 0; i < feedbackButtons.length; i++) {
+  feedbackButtons[i].addEventListener('click', showFeedbackModal);
+}
+popupLayer.classList.add('popup-layer--off');
+popupLayer.classList.add('popup-layer--modal');
+}
+
+for(var i = 0; i < feedbackButtons.length; i++) {
+  feedbackButtons[i].addEventListener('click', showFeedbackModal);
+}
+
+// Показ-скрытие модального окна 'Заказать звонок'
+
+let callbackModal = document.querySelector('.callback');
+let closeCallbackModalButton = callbackModal.querySelector('.callback__close');
+let callbackButtons = document.querySelectorAll('.btn--call');
+
+let showCallbackModal = function () {
+  callbackModal.classList.toggle('callback--off');
+  for(var i = 0; i < callbackButtons.length; i++) {
+    callbackButtons[i].removeEventListener('click', showCallbackModal);
+  }
+
+  closeCallbackModalButton.addEventListener('click', closeCallbackModal);
+  popupLayer.classList.remove('popup-layer--off');
+  popupLayer.classList.remove('popup-layer--modal');
+}
+
+let closeCallbackModal = function () {
+  callbackModal.classList.toggle('callback--off');
+for(var i = 0; i < callbackButtons.length; i++) {
+  callbackButtons[i].removeEventListener('click', closeCallbackModal);
+}
+for(var i = 0; i < callbackButtons.length; i++) {
+  callbackButtons[i].addEventListener('click', showCallbackModal);
+}
+popupLayer.classList.add('popup-layer--off');
+popupLayer.classList.add('popup-layer--modal');
+}
+
+for(var i = 0; i < callbackButtons.length; i++) {
+  callbackButtons[i].addEventListener('click', showCallbackModal);
+}
+
+
+
+
+
 
 
 // Swiperjs

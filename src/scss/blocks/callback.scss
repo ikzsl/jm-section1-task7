@@ -1,5 +1,12 @@
 .callback {
-  display: none;
+  right: 0;
+  transition: all 0.5s ease;
+
+
+  &--off {
+    right: -320px;
+    transition: all 0.5s ease;
+  }
 
   &__headline {
     margin-top: 40px;
@@ -9,10 +16,20 @@
   }
 
   @media (min-width: $desktop-width) {
+
+    &--off {
+      right: -550px;
+      transition: all 0.5s ease;
+    }
+
+    &__headline {
+      margin-top: 0;
+    }
+
     &__close {
       position: absolute;
       left: -70px;
-      top: 70px;
+      top: 32px;
     }
   }
 }

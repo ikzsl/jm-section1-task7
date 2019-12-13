@@ -8,11 +8,13 @@
       height: 100%;
       background: #fff;
       opacity: 0.9;
-      z-index: 100;
+      // z-index: 100;
 
       &--off {
         display: none;
       }
+
+      
 
     &__window {
       position: fixed;

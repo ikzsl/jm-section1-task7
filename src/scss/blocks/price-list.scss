@@ -8,6 +8,8 @@
 
   &__table {
     display: block;
+    list-style: none;
+    padding: 0;
   }
 
   &__items {
@@ -126,6 +128,7 @@
   @media (min-width: $tablet-width) {
     &__table {
       padding: 0 24px 24px;
+
     }
 
     &__header {
@@ -185,8 +188,9 @@
       justify-content: space-between;
       width: auto;
       height: 64px;
-      margin-right: 0;
+      margin: 0;
       padding: 16px 0;
+
       border-bottom: 1px solid $silver;
       border-radius: 0;
       background-color: transparent;
@@ -197,9 +201,13 @@
 
       & dt {
         display: none;
+
+
       }
 
       & dd {
+
+        padding: 0;
 
         &:nth-child(2) {
           width: 50%;
