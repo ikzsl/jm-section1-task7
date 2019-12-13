@@ -16,4 +16,10 @@
     bottom: 1px;
     border-radius: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: -36px;
+    }
+  }
 }

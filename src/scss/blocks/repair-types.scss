@@ -9,7 +9,6 @@
     list-style: none;
     padding: 16px;
     margin: 0;
-
   }
 
   &__link {
@@ -39,8 +38,12 @@
       flex-wrap: wrap;
       padding: 16px;
       margin: 0;
-      height: 160px;
+      height: auto;
       overflow: hidden;
+
+      &--rolled {
+        height: 160px;
+      }
     }
 
     &__link {

@@ -16,7 +16,6 @@
     color: inherit;
     display: block;
 
-
     &:hover,
     &:focus {
       color: $gray;
@@ -35,9 +34,18 @@
       width: 8px;
       height: 32px;
       top: 8px;
-      left: -28px;
+      left: -20px;
       border-radius: 4px;
       background-color: $green-cyan;
+    }
+  }
+
+  @media (min-width: $mobile-wide-width) {
+    &__item-link {
+      &--active::after,
+      &:active::after {
+        left: -28px;
+      }
     }
   }
 }

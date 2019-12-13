@@ -104,13 +104,16 @@
 
           <ul class="services__action-menu action-menu">
             <li class="action-menu__item">
-              <a class="btn btn--order" href="#" aria-label="Оставьте заявку на ремонт">
+              <a class="action-menu__link" href="#" aria-label="Оставьте заявку на ремонт">
                 <span class="btn__lable">Оставить заявку</span>
+                <div class="action-menu__button  btn btn--order"></div>
+
               </a>
             </li>
             <li class="action-menu__item">
-              <a class="btn btn--status" href="#" aria-label="Проверьте статус ремонта">
+              <a class="action-menu__link" href="#" aria-label="Проверьте статус ремонта">
                 <span class="btn__lable">Статус ремонта</span>
+                <div class="action-menu__button  btn btn--status"></div>
               </a>
             </li>
           </ul>
@@ -132,16 +135,24 @@
 
         <div class="services__main content">
           <div class="content__desc">
-            <div class="content__desc-wrapper">
-              <div class="content__text-wrapper">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
-                  нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
-                  подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
-                  рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            <div class="content__desc-wrapper content__desc-wrapper--rolled">
+              <div class="content__text-wrapper content__text-wrapper--rolled">
+                <p>Как следует из закона сохранения массы и энергии, сушильный шкаф адсорбирует зоогенный ортзанд. Можно
+                  думать, что расклинивание пространственно возникает органо-минеральный подзол. В первом приближении
+                  уровень грунтовых вод мгновенно увлажняет гумин. Копролит по определению полидисперсен. Поэтому совсем
+                  не случайно то, что гуминовая кислота поглощает кислый бугор пучения.</p>
+                <p> Свойство, на первый взгляд, стабильно. Эксикатор латерально растягивает желтозём, хотя этот факт
+                  нуждается в дальнейшей тщательной экспериментальной проверке. Просеивание косвенно. Шурф, согласно
+                  традиционным представлениям, вымывает в потенциал почвенной влаги. Псевдомицелий, в первом
+                  приближении, сложен.</p>
+                <p>При переходе к следующему уровню организации почвенного покрова сцепление представляет собой
+                  мозаичный фингер-эффект при любом их взаимном расположении. В соответствии с принципом
+                  неопределенности, отмучивание однократно. Потускула ускоряет чернозём, хотя этот факт нуждается в
+                  дальнейшей тщательной экспериментальной проверке. Коллембола, как следует из полевых и лабораторных
+                  наблюдений, статистически иссушает комковато-порошистый подзол. Сопротивление косвенно.</p>
               </div>
             </div>
-            <button type="button" class="unroll unroll--text">Читать далее</button>
+            <button type="button" class="content__unroll unroll unroll--text">Читать далее</button>
           </div>
 
           <img class="content__image" src="img/services-img.webp" alt="">
@@ -191,7 +202,7 @@
 
       <section class="repair-types swiper-container swiper2">
         <h2 class="repair-types__headline section-headline">Ремонт различных видов техники</h2>
-        <ul class="repair-types__list swiper-wrapper">
+        <ul class="repair-types__list repair-types__list--rolled swiper-wrapper">
           <li class="repair-types__item swiper-slide"><a href="#" class="repair-types__link button-arrow">Ремонт
               ноутбуков</a></li>
           <li class="repair-types__item swiper-slide"><a href="#" class="repair-types__link button-arrow">Ремонт
@@ -310,22 +321,15 @@
     </div>
   </div>
 
-  <!-- <div class="swiper-container">
-    <ul class="swiper-wrapper">
-      <li class="swiper-slide">Slide 1</li>
-      <li class="swiper-slide">Slide 2</li>
-      <li class="swiper-slide">Slide 3</li>
-      <li class="swiper-slide">Slide 4</li>
-      <li class="swiper-slide">Slide 5</li>
-      <li class="swiper-slide">Slide 6</li>
-      <li class="swiper-slide">Slide 7</li>
-      <li class="swiper-slide">Slide 8</li>
-      <li class="swiper-slide">Slide 9</li>
-      <li class="swiper-slide">Slide 10</li>
-    </ul>
 
-    <div class="swiper-pagination"></div>
-  </div> -->
+  <section class="feedback">
+    <h2 class="feedback__headline headline">Обратная связь</h2>
+  </section>
+
+
+  <div class="popup__layer popup__layer--off">
+  </div>
+
 
 </body>
 

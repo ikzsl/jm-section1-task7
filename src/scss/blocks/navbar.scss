@@ -8,21 +8,23 @@
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  z-index: 10;
+  z-index: 101;
   box-sizing: border-box;
   padding: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: $black;
-  transition: left 0.3s ease-out;
+  transition: left 0.5s ease;
 
   &--on {
     // display: flex;
     // animation: navbar 0.3s ease-out;
     visibility: visible;
     left: 0;
-    transition: left 0.3s ease-out;
+    transition: left 0.5s ease;
+
+
   }
 
   &__header {
@@ -61,7 +63,7 @@
     &:hover,
     &:focus {
       color: $gray;
-      transition: color 0.2s ease-out;
+      transition: color 0.2s ease;
     }
 
     &:active {
@@ -79,7 +81,7 @@
     &:hover,
     &:focus {
       color: $gray;
-      transition: color 0.2s ease-out;
+      transition: color 0.2s ease;
     }
 
     &:active {
@@ -102,7 +104,15 @@
 @media (min-width: $tablet-width) {
   .navbar {
     width: 320px;
-    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2), -2px 0 4px rgba(69, 79, 126, 0.02);
+    left: -320px;
+
+    box-shadow: none;
+
+    &--on {
+      box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2), -2px 0 4px rgba(69, 79, 126, 0.02);
+      left: 0;
+    transition: left 0.5s ease;
+    }
   }
 }
 

@@ -12,14 +12,20 @@
   }
 
   &__desc-wrapper {
-    height: 154px;
+    height: auto;
     overflow: hidden;
     margin-bottom: 16px;
+
+    &--rolled {
+      height: 154px;
+    }
   }
 
   &__text-wrapper {
     column-width: 100vw;
-    height: 100%;
+    &--rolled {
+      height: 100%;
+    }
 
     & p {
       color: $black;
@@ -46,11 +52,14 @@
     &__desc {
       width: 50%;
     }
-    
 
     &__desc-wrapper {
-      height: 174px;
+      height: auto;
       margin-bottom: 16px;
+
+      &--rolled {
+        height: 174px;
+      }
     }
 
     &__text-wrapper {
@@ -59,12 +68,13 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
+        margin: 0;
+        padding: 0 24px 16px 0;
       }
     }
 
     &__image {
       border-radius: 6px;
-      align-self: flex-end;
       width: auto;
     }
   }

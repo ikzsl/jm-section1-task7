@@ -29,13 +29,17 @@
   }
 
   @media (min-width: $desktop-width) {
+    &__header {
+      padding: 42px 32px 8px;
+    }
+
     &__action-menu {
       display: flex;
     }
 
     &__nav-menu {
       overflow: visible;
+      padding: 0 32px 0;
     }
   }
 }
-

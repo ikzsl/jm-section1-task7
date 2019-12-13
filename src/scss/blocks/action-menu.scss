@@ -31,7 +31,7 @@
     &__item {
       height: 40px;
       color: inherit;
-       font-weight: 500;
+      font-weight: 500;
       font-size: 16px;
       line-height: 24px;
     }
@@ -50,9 +50,27 @@
     }
 
     &__item {
+      display: block;
       width: 200px;
       text-align: right;
-      // align-self: flex-end;
+      color: $black;
+    }
+
+    &__link {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: $gray;
+        & .action-menu__button {
+          box-shadow: 0 0 0 3px white, 0 0 0 5px $red;
+          transition: box-shadow 0.2s ease-out;
+        }
+      }
     }
   }
 }
