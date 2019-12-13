@@ -23,9 +23,12 @@
 @import "blocks/main-header.scss";
 @import "blocks/swiper.scss";
 @import "blocks/contact-menu.scss";
+@import "blocks/popup-layer.scss";
 @import "blocks/popup.scss";
 @import "blocks/feedback.scss";
 @import "blocks/callback.scss";
+@import "blocks/form.scss";
+
 
 
 
@@ -53,7 +56,7 @@ input[type="radio"].visually-hidden {
 
 body {
   box-sizing: border-box;
-  font-family: $TTLakes;
+  font-family: $tt-lakes;
 }
 
 *,

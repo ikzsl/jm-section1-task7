@@ -19,7 +19,9 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      left: -36px;
+      left: -32px;
+      width: 3px;
     }
   }
+
 }

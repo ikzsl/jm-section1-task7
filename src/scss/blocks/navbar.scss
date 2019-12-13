@@ -8,7 +8,6 @@
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  z-index: 101;
   box-sizing: border-box;
   padding: 16px;
   font-weight: 500;
@@ -18,13 +17,10 @@
   transition: left 0.5s ease;
 
   &--on {
-    // display: flex;
-    // animation: navbar 0.3s ease-out;
+    z-index: 101;
     visibility: visible;
     left: 0;
     transition: left 0.5s ease;
-
-
   }
 
   &__header {
