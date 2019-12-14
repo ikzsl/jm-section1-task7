@@ -326,10 +326,14 @@
     <button type="button" class="feedback__close btn btn--close" aria-label="Закрыть форму"></button>
     <h2 class="feedback__headline headline">Обратная связь</h2>
     <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
-      <input type="text" name="name" placeholder="Имя" class="form__text-input">
-      <input type="tel" name="tel" placeholder="Телефон" class="form__text-input">
-      <input type="email" name="email" placeholder="Электронная почта" class="form__text-input">
-      <textarea name="text" rows="4" placeholder="Сообщение" class="form__text-input"></textarea>
+      <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input">
+      <label class="visually-hidden" for="name" >Введите имя</label>
+      <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input">
+      <label class="visually-hidden" for="tel" >Введите номер телефона</label>
+      <input type="email" name="email" id="email" placeholder="Электронная почта" class="form__text-input">
+      <label class="visually-hidden" for="email" >Введите адрес электронной почты</label>
+      <textarea name="text" rows="4" id="message" placeholder="Сообщение" class="form__text-input"></textarea>
+      <label class="visually-hidden" for="message" >Введите сообщение</label>
       <label class="form__agree">Нажимая “отправить”, вы даете согласие на <a href="#"
           class="form__agree-link">обработку персональных данных </a>и
         соглашаетесь с нашей <a href="#" class="form__agree-link">политикой конфиденциальности</a></label>
@@ -342,7 +346,8 @@
     <button type="button" class="callback__close btn btn--close" aria-label="Закрыть форму"></button>
     <h2 class="callback__headline headline">Заказать звонок</h2>
     <form class="callback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
-      <input type="tel" name="tel" placeholder="Телефон" class="form__text-input">
+      <input type="tel" name="tel" id="callback-tel" placeholder="Телефон" class="form__text-input">
+      <label class="visually-hidden" for="callback-tel" >Введите номер телефона</label>
       <label class="form__agree">Нажимая “отправить”, вы даете согласие на <a href="#"
           class="form__agree-link">обработку персональных данных </a>и
         соглашаетесь с нашей <a href="#" class="form__agree-link">политикой конфиденциальности</a></label>

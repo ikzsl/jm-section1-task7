@@ -67,12 +67,14 @@ let showNavbar = function () {
   navBar.classList.toggle('navbar--on');
   menuButton.removeEventListener('click', showNavbar);
   closeButton.addEventListener('click', hideNavbar);
+  popupLayer.addEventListener('click', hideNavbar);
   popupLayer.classList.remove('popup-layer--off');
 }
 
 let hideNavbar = function () {
   navBar.classList.toggle('navbar--on');
   closeButton.removeEventListener('click', hideNavbar);
+  popupLayer.removeEventListener('click', hideNavbar);
   menuButton.addEventListener('click', showNavbar);
   popupLayer.classList.add('popup-layer--off');
 }
