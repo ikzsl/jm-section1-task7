@@ -25,10 +25,8 @@
     text-align: center;
     padding-bottom: 10px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .main-footer {
+  @media (min-width: $tablet-width) {
     padding: 32px 24px;
 
     &__items {
@@ -46,10 +44,8 @@
       }
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-footer {
+  @media (min-width: $desktop-width) {
     padding: 32px;
   }
 }

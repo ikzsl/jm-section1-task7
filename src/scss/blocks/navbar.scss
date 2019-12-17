@@ -90,16 +90,12 @@
     padding: 40px 0 20px;
     list-style: none;
   }
-}
 
-@media (min-width: $mobile-wide-width) {
-  .navbar {
+  @media (min-width: $mobile-wide-width) {
     padding: 16px 24px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .navbar {
+  @media (min-width: $tablet-width) {
     width: 320px;
     left: -320px;
 
@@ -108,17 +104,14 @@
     &--on {
       box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2), -2px 0 4px rgba(69, 79, 126, 0.02);
       left: 0;
-    transition: left 0.5s ease;
+      transition: left 0.5s ease;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .navbar {
+  @media (min-width: $desktop-width) {
     position: static;
     min-width: 305px;
     box-shadow: none;
-
 
     display: flex;
 

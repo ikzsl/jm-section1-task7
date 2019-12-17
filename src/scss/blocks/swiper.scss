@@ -4,10 +4,7 @@
   // overflow: hidden;
   width: auto;
   z-index: 0;
-
 }
-
-
 
 .swiper-pagination1 {
   // margin: 0 auto;
@@ -34,9 +31,7 @@
   width: 12px;
   height: 12px;
 
-
-    background-color: #B5B6BC;
-
+  background-color: #b5b6bc;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,7 +42,6 @@
       display: none;
     }
   }
-
 
   .swiper-slide {
     width: auto;

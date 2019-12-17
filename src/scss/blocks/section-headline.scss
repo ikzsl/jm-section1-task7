@@ -9,11 +9,8 @@
   padding: 16px;
   margin: 0;
   border-top: 1px solid $blue;
-}
 
-@media (min-width: $tablet-width) {
-
-  .section-headline {
+  @media (min-width: $tablet-width) {
     padding-left: 24px;
   }
 }

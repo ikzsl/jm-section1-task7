@@ -78,7 +78,6 @@ let hideNavbar = function () {
   menuButton.addEventListener('click', showNavbar);
   popupLayer.classList.add('popup-layer--off');
 }
-
 menuButton.addEventListener('click', showNavbar);
 
 

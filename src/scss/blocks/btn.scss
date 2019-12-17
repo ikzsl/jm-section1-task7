@@ -80,10 +80,7 @@
     background-size: 20px;
   }
 
-}
-
-@media (min-width: $desktop-width) {
-  .btn {
+  @media (min-width: $desktop-width) {
     &__lable {
       visibility: visible;
       color: inherit;

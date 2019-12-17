@@ -32,11 +32,7 @@
       border: 1px solid #ffffff;
     }
   }
-}
-
-@media (min-width: $tablet-width) {
-  .brands {
-
+  @media (min-width: $tablet-width) {
     padding-bottom: 32px;
 
     &__headline {
@@ -62,15 +58,11 @@
       margin: 0 16px 16px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .brands {
+  @media (min-width: $desktop-width) {
     padding-bottom: 50px;
 
     &__list {
-
-
       &--rolled {
         overflow: hidden;
       }
@@ -79,7 +71,6 @@
     &__link {
       min-width: 240px;
       margin: 0 6px 16px;
-
     }
   }
 }

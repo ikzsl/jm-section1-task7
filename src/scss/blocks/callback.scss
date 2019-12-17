@@ -2,7 +2,6 @@
   right: 0;
   transition: all 0.5s ease;
 
-
   &--off {
     right: -320px;
     transition: all 0.5s ease;
@@ -16,7 +15,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &--off {
       right: -550px;
       transition: all 0.5s ease;
