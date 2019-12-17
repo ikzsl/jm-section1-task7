@@ -23,6 +23,8 @@
 
   @media (min-width: $desktop-width) {
 
+    overflow: visible;
+
     &--off {
       right: -550px;
       transition: all 0.5s ease;
