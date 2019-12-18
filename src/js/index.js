@@ -88,7 +88,12 @@ let closeFeedbackModalButton = feedbackModal.querySelector('.feedback__close');
 let feedbackButtons = document.querySelectorAll('.btn--chat');
 
 let showFeedbackModal = function () {
-  feedbackModal.classList.toggle('feedback--off');
+  if(!callbackModal.querySelector('.callback--off')){
+    closeCallbackModal();
+  }
+
+
+  feedbackModal.classList.remove('feedback--off');
   for(var i = 0; i < feedbackButtons.length; i++) {
     feedbackButtons[i].removeEventListener('click', showFeedbackModal);
   }
@@ -96,10 +101,12 @@ let showFeedbackModal = function () {
   closeFeedbackModalButton.addEventListener('click', closeFeedbackModal);
   popupLayer.classList.remove('popup-layer--off');
   popupLayer.classList.remove('popup-layer--modal');
+
+
 }
 
 let closeFeedbackModal = function () {
-  feedbackModal.classList.toggle('feedback--off');
+  feedbackModal.classList.add('feedback--off');
 for(var i = 0; i < feedbackButtons.length; i++) {
   feedbackButtons[i].removeEventListener('click', closeFeedbackModal);
 }
@@ -121,7 +128,11 @@ let closeCallbackModalButton = callbackModal.querySelector('.callback__close');
 let callbackButtons = document.querySelectorAll('.btn--call');
 
 let showCallbackModal = function () {
-  callbackModal.classList.toggle('callback--off');
+ if (!feedbackModal.querySelector('.feedback--off')){
+   closeFeedbackModal();
+ }
+
+  callbackModal.classList.remove('callback--off');
   for(var i = 0; i < callbackButtons.length; i++) {
     callbackButtons[i].removeEventListener('click', showCallbackModal);
   }
@@ -129,10 +140,12 @@ let showCallbackModal = function () {
   closeCallbackModalButton.addEventListener('click', closeCallbackModal);
   popupLayer.classList.remove('popup-layer--off');
   popupLayer.classList.remove('popup-layer--modal');
+
+
 }
 
 let closeCallbackModal = function () {
-  callbackModal.classList.toggle('callback--off');
+  callbackModal.classList.add('callback--off');
 for(var i = 0; i < callbackButtons.length; i++) {
   callbackButtons[i].removeEventListener('click', closeCallbackModal);
 }
