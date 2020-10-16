@@ -1,4 +1,4 @@
-# JM-section1-task7
+# JM-1-7
 
 ## Features
 - Babel
