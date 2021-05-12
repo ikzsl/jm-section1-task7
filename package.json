@@ -46,6 +46,6 @@
     "normalize.css": "^8.0.1",
     "postcss-cli": "^6.1.3",
     "serialize-javascript": "^2.1.1",
-    "swiper": "^5.2.1"
+    "swiper": "^6.5.1"
   }
 }
